@@ -1,8 +1,4 @@
-const Tes = () =>{
-    return(
-        <main>
-            Ini namanya molecules
-        </main>
-    )
-}
+const Tes = () => {
+  return <main>Ini namanya molecules</main>;
+};
 export default Tes;

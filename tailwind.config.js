@@ -1,18 +1,70 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+const config = {
+  content: ["./app", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        //White Mode
+        primary: {
+          orange: "#F8991D",
+        },
+        secondary: {
+          maroon: "#801517",
+          teal: "#17655C,",
+        },
+
+        //Dark Mode
+        DarkMode: {
+          DarkBlue: "#0F172A",
+          white: "#FFFFFF",
+        },
+      },
+      fontSize: {
+        "text-s": [
+          "12px",
+          {
+            lineHeight: "16px",
+          },
+        ],
+        "text-m": [
+          "14px",
+          {
+            lineHeight: "20px",
+          },
+        ],
+        "text-l": [
+          "16px",
+          {
+            lineHeight: "24px",
+          },
+        ],
+        "heading-s": [
+          "20px",
+          {
+            lineHeight: "28px",
+          },
+        ],
+        "heading-m": [
+          "28px",
+          {
+            lineHeight: "36px",
+          },
+        ],
+        "heading-l": [
+          "36px",
+          {
+            lineHeight: "44px",
+          },
+        ],
+        "heading-xl": [
+          "64px",
+          {
+            lineHeight: "72px",
+          },
+        ],
       },
     },
   },
   plugins: [],
-}
+};
+
+module.exports = config;

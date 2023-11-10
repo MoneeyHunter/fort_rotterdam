@@ -1,12 +1,13 @@
-import Image from 'next/image'
-import Molecules from '../app/_components/molecules'
-import Atoms from '../app/_components/atoms'
+import Molecules from "./_components/molecules";
+import Atoms from "./_components/atoms";
+import Organisms from "./_components/organisms";
 
 export default function Home() {
   return (
     <main className="">
-      <Molecules/>
-      <Atoms/>
+      <Molecules />
+      <Atoms />
+      <Organisms />
     </main>
-  )
+  );
 }
