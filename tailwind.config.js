@@ -55,7 +55,14 @@ const config = {
             lineHeight: "44px",
           },
         ],
+
         "heading-xl": [
+          "52px",
+          {
+            lineHeight: "60px",
+          },
+        ],
+        "heading-2xl": [
           "64px",
           {
             lineHeight: "72px",
