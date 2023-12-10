@@ -1,10 +1,11 @@
 import Image from "next/image";
+import Link from "next/Link";
 import Circle from "../atoms/PrimaryCircle";
 
 const LihatGaleri = () => {
   return (
     <main>
-      <section className="flex flex-col gap-[350px] items-center relative w-full min-h-screen md:gap-[450px] border-2">
+      <section className="flex flex-col gap-[350px] items-center relative w-full min-h-screen md:gap-[450px] lg:pb-6">
         <div className="border-r absolute border-black top-0 h-[30%] transition-height duration-300 ease"></div>
         <section className="flex relative w-full lg:pb-3 ">
           <div className="top-44 md:top-60 left-0 absolute">
@@ -63,13 +64,16 @@ const LihatGaleri = () => {
               Benteng Fort Rotterdam
             </p>
             <section className="flex md:gap-5 items-center cursor-pointer">
+              <link rel="stylesheet" href="" />
               <Circle bgColor="bg-primary-orange ">
                 <Image src="./icons/iconGaleri.svg" width={25} height={25} />
               </Circle>
 
-              <p className="text-heading-s lg:text-heading-m font-semibold ">
-                Lihat Galeri
-              </p>
+              <Link href={"#"}>
+                <p className="text-heading-s lg:text-heading-m font-semibold ">
+                  Lihat Galeri
+                </p>
+              </Link>
             </section>
           </section>
 
