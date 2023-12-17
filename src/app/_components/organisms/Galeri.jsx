@@ -64,11 +64,9 @@ const LihatGaleri = () => {
               Benteng Fort Rotterdam
             </p>
             <section className="flex md:gap-5 items-center cursor-pointer">
-              <link rel="stylesheet" href="" />
-              <Circle bgColor="bg-primary-orange ">
-                <Image src="./icons/iconGaleri.svg" width={25} height={25} />
+              <Circle bgColor="bg-primary-orange">
+                <Image src="./icons/iconGaleri.svg" width={30} height={30} />
               </Circle>
-
               <Link href={"#"}>
                 <p className="text-heading-s lg:text-heading-m font-semibold ">
                   Lihat Galeri

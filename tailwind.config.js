@@ -9,7 +9,7 @@ const config = {
         },
         secondary: {
           maroon: "#801517",
-          teal: "#17655C,",
+          teal: "#17655C",
         },
 
         //Dark Mode
