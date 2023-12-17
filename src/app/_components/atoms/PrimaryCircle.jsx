@@ -1,10 +1,10 @@
 //Membuat Primary Circle untuk Tiap Icon
 const primary = (props) => {
-  const { fullWidth = false, children, bgColor } = props;
-  const width = fullWidth ? "w-full" : "w-fit";
+  const { children, bgColor } = props;
+
   return (
     <button
-      className={`flex rounded-full p-5 ${width} ${bgColor} transition-transform scale-[.65] md:scale-75 lg:scale-100 `}
+      className={`flex rounded-full p-5 w-[80px] h-[80px] transition-transform justify-center items-center scale-[.65] md:scale-75 lg:scale-100  ${bgColor}`}
     >
       {children}
     </button>
