@@ -1,6 +1,6 @@
 const Box = ({children}) => {
   return (
-    <main>
+    <main className="relative flex">
       <section className="flex relative w-[400px] h-[230px] rounded-[20px] border border-stone-300"> 
         <div className="absolute w-full top-[22%] border border-stone-300 "></div>
         <div className="absolute h-full left-[14%] border border-stone-300"></div>
