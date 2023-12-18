@@ -1,9 +1,13 @@
-import Galeri from "./_components/organisms/Galeri";
+import Molecules from "./_components/molecules";
+import Atoms from "./_components/atoms";
+import Organisms from "./_components/organisms";
 
 export default function Home() {
   return (
-    <main>
-      <Galeri />
+    <main className="">
+      <Molecules />
+      <Atoms />
+      <Organisms />
     </main>
   );
 }
