@@ -5,114 +5,102 @@ import Circle from "../atoms/PrimaryCircle";
 
 const SubHero = () => {
   return(
-    <main className="flex flex-col">
-      {/* membuat header KURANG PADDING*/}
-      <section className="text-primary-orange text-center font-bold text-heading-l pb-5 pt-5  
-      lg:text-heading-xl"> 
-        <h1 className="uppercase">
+    <main className="flex flex-col gap-48">
+      <section className="">
+        {/* Header */}
+        <section className="text-primary-orange text-center font-bold text-heading-l pt-14  
+          lg:text-heading-xl
+          md:text-[45px]"> 
+          <h1 className="uppercase">
           informasi umum
-        </h1>
-      </section>
+          </h1>
+        </section>
 
-      {/* membuat 3 kotak inforamasi */}
-      <section className="flex gap-5 justify-center flex-wrap items-center container">
+        {/* Membuat 3 Box */}
+        <section className="flex gap-5 justify-center flex-wrap items-center pt-16">
         {/* Box Pertama */}
-          <Box className="relative flex">
-            <section>
-              <div className="absolute 
-                top-[15.5%] left-[13%]
-                lg:top-[115px] lg:left-[2%]
-                ">
-                <Circle bgColor="bg-secondary-teal">
-                  <Image src="./icons/vectorGreen.svg" width={50} height={50} 
-                    alt="green"/>
-                </Circle> 
+          <Box>
+            <div className="absolute 
+              top-[5.5%] left-[4.5%]">
+              <Circle bgColor="bg-secondary-teal">
+                <Image src="./icons/vectorGreen.svg" width={50} height={50} 
+                alt="green"/>
+              </Circle> 
               </div>  
-            </section>
             <section className="flex">
-              <div className="absolute text-lg text-black font-medium
-                top-[20%] left-[28%]
-                lg:left-[9%] lg:top-[140px]
-                ">
+              <p className="absolute text-lg text-black font-medium
+                top-[17%] left-[25%]
+                lg:left-[27%] lg:top-[17%]">
                 Sejarah Yang Memukau
-              </div>
-              <div className="absolute w-[290px] text-base text-justify
-                top-[28%] left-[25%]
-                lg:top-[30%] lg:left-[8%]">
+              </p>
+              <p className="absolute w-[290px] text-base text-justify
+                top-[40%] left-[20%]
+                lg:top-[40%] lg:left-[20%]">
                 Fort Rotterdam adalah peninggalan 
                 sejarah yang hidup, mencakup lebih 
                 dari tiga abad peristiwa penting 
                 yang membentuk Makassar dan 
                 Indonesia.
-              </div>
+              </p>
             </section>
           </Box>
 
         {/* Box Kedua */}
-          <Box className="relative flex">
-            <section>
+          <Box>
               <div className="absolute 
-              top-[55%] left-[13%]
-              lg:top-[115px] lg:left-[35.5%]">
+              top-[5.5%] left-[4.5%]
+              lg:top-[5.5%] lg:left-[4.5%]">
                 <Circle bgColor="bg-secondary-maroon">
                   <Image src="./icons/vectorMaroon.svg" width={60} height={60}
                     alt="maroon"/>
                 </Circle> 
               </div>
-            </section>
             <section className="flex">
-              <div className="absolute text-lg text-black font-medium
-                left-[28%] top-[59.5%]
-                lg:left-[42.5%] lg:top-[140px]">
+              <p className="absolute text-lg text-black font-medium
+                top-[17%] left-[25%]
+                lg:left-[27%] lg:top-[17%]">
                 Koleksi Seni dan Budaya
-              </div>
-              <div className="absolute w-[290px] text-base text-justify
-                left-[25%] top-[67.5%]
-                lg:top-[30%] lg:left-[41.2%]">
+              </p>
+              <p className="absolute w-[290px] text-base text-justify
+                top-[40%] left-[20%]">
                 Dari seni lokal hingga artefak 
                 bersejarah, fort ini menyimpan 
                 kekayaan seni dan budaya yang 
                 menginspirasi dan memukau 
                 pengunjung.
-              </div>
+              </p>
             </section>
           </Box>
         
         {/* Box Ketiga */}
-          <Box className="relative flex">
-            <section>
+          <Box>
               <div className="absolute 
-                left-[13%] top-[95%]
-                lg:top-[115px] lg:left-[68.8%]">
+                top-[5.5%] left-[4.5%]
+                lg:top-[5.5%] lg:left-[4.5%]">
                 <Circle bgColor="bg-cyan-900">
                   <Image src="./icons/vectorBlue.svg" width={60} height={60}
                     alt="blue"/>
                 </Circle>
               </div>
-            </section>
             <section className="flex">
-              <div className="absolute text-lg text-black font-medium
-              left-[28%] top-[99.5%]
-              lg:left-[76%] lg:top-[140px]">
+              <p className="absolute text-lg text-black font-medium
+              top-[17%] left-[25%]
+              lg:left-[27%] lg:top-[17%]">
                 Pengalaman Wisata Edukatif
-              </div>
-              <div className="absolute w-[290px] text-base text-justify
-              left-[25%] top-[107%]
-              lg:top-[30%] lg:left-[74.5%]">
+              </p>
+              <p className="absolute w-[290px] text-base text-justify
+              top-[40%] left-[20%]">
                 Fort Rotterdam menawarkan 
                 pengalaman wisata mendidik dan 
                 mengasyikkan yang mampu 
                 membuat pengunjung merasakan 
                 masa lalu secara langsung.
-              </div>
+              </p>
             </section>
           </Box>
         </section>
- 
-      {/* Gap */}
-      <section className="w-full h-[100px] bg-white lg:h-[170px]">
       </section>
-
+      
       {/* membuat kotak orange */}
       <section className="relative w-full h-[250px] md:h-[400px] lg:h-[500px] bg-primary-orange gap-3"> 
           <div className="absolute text-6xl top-20 left-[5%] text-white font-bold 
