@@ -5,7 +5,7 @@ import Circle from "../atoms/PrimaryCircle";
 
 const SubHero = () => {
   return(
-    <main className="flex flex-col gap-48">
+    <main className="flex flex-col gap-24 lg:gap-36">
       <section className="">
         {/* Header */}
         <section className="text-primary-orange text-center font-bold text-heading-l pt-14  
@@ -17,7 +17,7 @@ const SubHero = () => {
         </section>
 
         {/* Membuat 3 Box */}
-        <section className="flex gap-5 justify-center flex-wrap items-center pt-16">
+        <section className="flex gap-5 justify-center flex-wrap items-center pt-16 sm:px-6 lg:px-0 md:px-0">
         {/* Box Pertama */}
           <Box>
             <div className="absolute 
@@ -103,16 +103,16 @@ const SubHero = () => {
       
       {/* membuat kotak orange */}
       <section className="relative w-full h-[250px] md:h-[400px] lg:h-[500px] bg-primary-orange gap-3"> 
-          <div className="absolute text-6xl top-20 left-[5%] text-white font-bold 
+          <p className="absolute text-6xl top-20 left-[5%] text-white font-bold 
             lg:left-[10%] lg:top-28 lg:text-9xl
-            md:text-8xl md:top-32 md:left-[15%]">“</div>
-          <div className="absolute text-xl top-24 left-[13%] text-white font-bold leading-tight uppercase
+            md:text-8xl md:top-32 md:left-[11%]">“</p>
+          <p className="absolute text-xl top-24 left-[13%] text-white font-bold leading-tight uppercase
             lg:text-5xl lg:top-44 lg:left-[17%] lg:leading-tight
-            md:text-3xl md:top-40 md:left-[23%] md:leading-tight">
+            md:text-3xl md:top-40 md:left-[18%] md:leading-tight">
               sejarah mengungkapkan masa lalu,<br/> 
               memberitahu masa kini,<br/>
               & mempersiapkan masa depan
-          </div>
+          </p>
       </section>
     </main>
   )
