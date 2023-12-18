@@ -84,7 +84,7 @@ const SubHero = () => {
               <div className="absolute 
                 left-[13%] top-[95%]
                 lg:top-[115px] lg:left-[68.8%]">
-                <Circle bgColor="bg-secondary-navy">
+                <Circle bgColor="bg-cyan-900">
                   <Image src="./icons/vectorBlue.svg" width={60} height={60}
                     alt="blue"/>
                 </Circle>
@@ -108,14 +108,13 @@ const SubHero = () => {
             </section>
           </Box>
         </section>
-
+ 
       {/* Gap */}
       <section className="w-full h-[100px] bg-white lg:h-[170px]">
       </section>
 
       {/* membuat kotak orange */}
       <section className="relative w-full h-[250px] md:h-[400px] lg:h-[500px] bg-primary-orange gap-3"> 
-        <div>
           <div className="absolute text-6xl top-20 left-[5%] text-white font-bold 
             lg:left-[10%] lg:top-28 lg:text-9xl
             md:text-8xl md:top-32 md:left-[15%]">“</div>
@@ -126,7 +125,6 @@ const SubHero = () => {
               memberitahu masa kini,<br/>
               & mempersiapkan masa depan
           </div>
-        </div>
       </section>
     </main>
   )
