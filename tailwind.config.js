@@ -5,10 +5,10 @@ const config = {
       colors: {
         //White Mode
         primary: {
-          orange: "#F8991D",
+          maroon: "#801517",
         },
         secondary: {
-          maroon: "#801517",
+          orange: "#F8991D",
           teal: "#17655C",
         },
 
