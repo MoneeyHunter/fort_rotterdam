@@ -65,7 +65,7 @@ const LihatGaleri = () => {
               Fort Rotterdam
             </p>
             <section className="flex md:gap-5 items-center cursor-pointer">
-              <Circle bgColor="bg-primary-maroon">
+              <Circle className="bg-primary-maroon">
                 <Image src="./icons/iconGaleri.svg" width={30} height={30} />
               </Circle>
               <Link href={"#"}>
