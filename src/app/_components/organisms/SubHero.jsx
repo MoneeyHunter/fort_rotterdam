@@ -8,7 +8,7 @@ const SubHero = () => {
     <main className="flex flex-col gap-24 lg:gap-36">
       <section className="">
         {/* Header */}
-        <section className="text-primary-orange text-center font-bold text-heading-l pt-14  
+        <section className="text-primary-maroon text-center font-bold text-heading-l pt-14  
           lg:text-heading-xl
           md:text-[45px]"> 
           <h1 className="uppercase">
@@ -21,9 +21,9 @@ const SubHero = () => {
         {/* Box Pertama */}
           <Box>
             <div className="absolute 
-              top-[5.5%] left-[4.5%]">
-              <Circle bgColor="bg-secondary-teal">
-                <Image src="./icons/vectorGreen.svg" width={50} height={50} 
+              top-[9%] left-[6%]">
+              <Circle className="w-16 h-16 bg-secondary-teal">
+                <Image src="./icons/vectorGreen.svg" width={35} height={35} 
                 alt="green"/>
               </Circle> 
               </div>  
@@ -48,10 +48,9 @@ const SubHero = () => {
         {/* Box Kedua */}
           <Box>
               <div className="absolute 
-              top-[5.5%] left-[4.5%]
-              lg:top-[5.5%] lg:left-[4.5%]">
-                <Circle bgColor="bg-secondary-maroon">
-                  <Image src="./icons/vectorMaroon.svg" width={60} height={60}
+              top-[9%] left-[6%]">
+                <Circle className="w-16 h-16 bg-primary-maroon">
+                  <Image src="./icons/vectorMaroon.svg" width={35} height={35}
                     alt="maroon"/>
                 </Circle> 
               </div>
@@ -75,10 +74,9 @@ const SubHero = () => {
         {/* Box Ketiga */}
           <Box>
               <div className="absolute 
-                top-[5.5%] left-[4.5%]
-                lg:top-[5.5%] lg:left-[4.5%]">
-                <Circle bgColor="bg-cyan-900">
-                  <Image src="./icons/vectorBlue.svg" width={60} height={60}
+                top-[9%] left-[6%]">
+                <Circle className="w-16 h-16 bg-cyan-900">
+                  <Image src="./icons/vectorBlue.svg" width={45} height={45}
                     alt="blue"/>
                 </Circle>
               </div>
@@ -102,17 +100,15 @@ const SubHero = () => {
       </section>
       
       {/* membuat kotak orange */}
-      <section className="relative w-full h-[250px] md:h-[400px] lg:h-[500px] bg-primary-orange gap-3"> 
-          <p className="absolute text-6xl top-20 left-[5%] text-white font-bold 
-            lg:left-[10%] lg:top-28 lg:text-9xl
-            md:text-8xl md:top-32 md:left-[11%]">“</p>
-          <p className="absolute text-xl top-24 left-[13%] text-white font-bold leading-tight uppercase
-            lg:text-5xl lg:top-44 lg:left-[17%] lg:leading-tight
-            md:text-3xl md:top-40 md:left-[18%] md:leading-tight">
+      <section className="relative w-full h-[250px] md:h-[400px] lg:h-[500px] bg-primary-maroon font-bold text-white flex justify-center items-center uppecercase"> 
+        <section className="flex">
+          <p className="text-6xl translate-x-0  lg:text-7xl">“</p>
+          <p className="lg:text-heading-l pt-8 md:text-heading-m text-l  uppercase -translate-y-2">
               sejarah mengungkapkan masa lalu,<br/> 
               memberitahu masa kini,<br/>
-              & mempersiapkan masa depan
+              dan mempersiapkan masa depan
           </p>
+        </section>
       </section>
     </main>
   )

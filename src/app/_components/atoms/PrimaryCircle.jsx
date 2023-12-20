@@ -4,7 +4,7 @@ const primary = (props) => {
 
   return (
     <button
-      className={`flex rounded-full p-5 w-[80px] h-[80px] transition-transform justify-center items-center scale-[.65] md:scale-75 lg:scale-100 ${className}`}
+      className={`flex rounded-full transition-transform justify-center items-center ${className}`}
     >
       {children}
     </button>
