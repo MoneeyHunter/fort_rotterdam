@@ -1,12 +1,36 @@
+"use client";
+
+import React, { useState, useEffect } from "react";
 import Logo from "../atoms/Logo";
 import NavbarItems from "../molecules/NavbarItems";
 
+//Membuat Komponen Navbar
 const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  //Fungsi untuk menampilkan Navbar ketika di Scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      setIsScrolled(scrollPosition > 0);
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="sticky px-8 py-4 flex justify-between items-center overflow-hidden">
+    <nav
+      className={`fixed top-0 left-0 right-0 px-4 py-5 flex justify-between items-center transition-all ${
+        isScrolled ? "bg-primary-maroon" : "shadow-none"
+      } shadow-md`}
+    >
       <Logo />
       <NavbarItems />
     </nav>
   );
 };
+
 export default Navbar;

@@ -2,30 +2,41 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
-import iconLang from "../../../../public/icons/lang.svg";
 import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownRounded";
 
 const NavbarItems = () => {
+  //State untuk menampilkan Navbar di Mobile
   const [isOpen, setIsOpen] = useState(false);
-  const [isActive, setIsActive] = useState(false);
 
-  const handleNavItemClick = (idx) => {
-    setIsActive(idx);
+  //Fungsi untuk menutup Navbar di Mobile ketika di Resize
+  useEffect(() => {
+    const closeNavigation = () => {
+      setIsOpen(false);
+    };
+    window.addEventListener("resize", closeNavigation);
+    return () => {
+      window.removeEventListener("resize", closeNavigation);
+    };
+  }, []);
+
+  //Fungsi untuk menutup Navbar di Mobile
+  const handleNavItemClick = () => {
     setIsOpen(false);
   };
 
+  //Link yang ada di Navbar
   const links = [
     { text: "Beranda", href: "/" },
     { text: "Sejarah", href: "/" },
     { text: "Galeri", href: "/" },
-    { text: "Spot Interaktif", href: "/" },
+    { text: "Spot Menarik", href: "/" },
     {
       text: "Informasi Tempat",
       href: "/",
       sublinks: [
-        { text: "Tips Tour", href: "/" },
+        { text: "Tips wisata", href: "/" },
         { text: "Jam buka", href: "/" },
         { text: "Tiket masuk", href: "/" },
         { text: "Lokasi", href: "/" },
@@ -33,28 +44,39 @@ const NavbarItems = () => {
     },
   ];
 
+  // Membuat Link yang ada di Navbar
   const NavElements = links.map((link, idx) => (
+    // Link Informasi Tempat yang memiliki Sublink
     <li key={idx}>
       {link.sublinks ? (
         <section className="relative group">
           <Link
             href={link.href}
-            className="flex px-8 py-5 font-bold text-white text-text-l justify-center items-center relative transition duration-300 transform group-hover:scale-110"
+            className={`flex font-bold text-text-l relative transition duration-300 transform ${
+              isOpen
+                ? "text-primary-maroon px-20 py-6 hover:bg-primary-maroon hover:bg-opacity-20 lg:border-none"
+                : "py-3 pl-8 text-white hover:scale-110 "
+            }`}
           >
             {link.text}
             <KeyboardArrowDownRoundedIcon
-              className="ml-1 mr-8 transform transition-transform duration-300 justify-center items-center group-hover:rotate-180 "
-              style={{ width: "2rem", height: "2rem" }}
+              className="ml-1 transform transition-transform duration-300 justify-center items-center group-hover:rotate-180 "
+              style={{ width: "1.5rem", height: "1.5rem" }}
             />
-            <Image src={iconLang} width={20} height={20} alt="Icon Bahasa" />
           </Link>
 
-          <ul className="absolute hidden bg-white text-black group-hover:block left-10">
+          {/* Sublink yang ada di Link Informasi Tempat */}
+          <ul
+            className={`absolute bg-white text-primary-maroon group-hover:block left-7 ${
+              isOpen ? " px-12 w-screen hidden " : "hidden"
+            }`}
+          >
             {link.sublinks.map((sublink, subIdx) => (
               <li key={subIdx}>
                 <Link
                   href={sublink.href}
-                  className="block px-8 py-3 text-text-l bg-white transition duration-300 transform "
+                  className="block px-10 py-3 text-text-m font-bold bg-white transition duration-300 transform hover:bg-primary-maroon hover:bg-opacity-20 hover:border-primary-maroon hover:border-l-4"
+                  onClick={() => handleNavItemClick(subIdx)}
                 >
                   {sublink.text}
                 </Link>
@@ -63,9 +85,15 @@ const NavbarItems = () => {
           </ul>
         </section>
       ) : (
+        //Link yang tidak memiliki Sublink yaitu Beranda, Sejarah, Galeri, dan Spot Menarik
         <Link
           href={link.href}
-          className="flex px-8 py-5 font-bold text-white text-text-l transition duration-300 transform hover:scale-110"
+          className={`flex font-bold text-text-l transition duration-300 transform lg:border-none ${
+            isOpen
+              ? "text-primary-maroon py-6 px-20 hover:bg-primary-maroon hover:bg-opacity-20"
+              : "py-3 text-white px-8 hover:scale-110 "
+          }`}
+          onClick={() => handleNavItemClick(idx)}
         >
           {link.text}
         </Link>
@@ -74,11 +102,13 @@ const NavbarItems = () => {
   ));
 
   return (
-    <ul className="flex items-center justify-center gap-4 px-4 py-2">
+    <ul className="flex items-center justify-center gap-4 py-2">
+      {/* Button untuk menampilkan Navbar di Mobile */}
       <button
-        className="flex h-5 flex-col justify-between px-4 lg:hidden"
+        className="flex h-5 flex-col justify-between lg:hidden"
         onClick={() => setIsOpen(!isOpen)}
       >
+        {/* Hamburger Menu */}
         <span
           className={`ease block h-[3px] w-[30px] origin-top-left rounded-lg bg-white transition duration-300 ${
             isOpen
@@ -99,8 +129,10 @@ const NavbarItems = () => {
           } `}
         ></span>
       </button>
+
+      {/* Kondisi ketika Navbar di Mobile */}
       {isOpen ? (
-        <nav className="absolute right-0 top-full h-screen w-screen bg-white p-10 lg:static lg:mt-0 lg:h-auto lg:w-auto lg:p-0">
+        <nav className="absolute right-0 top-full h-screen bg-white w-screen xl:static lg:mt-0 xl:h-auto xl:w-auto xl:p-0">
           <ul className="block lg:flex ">{NavElements}</ul>
         </nav>
       ) : (

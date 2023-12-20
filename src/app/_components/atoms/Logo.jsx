@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import LogoFortRotterdam from "../../../../public/icons/fort_rotterdam.svg";
 
+//Membuat Komponen Logo untuk Header dan Footer
 const Logo = () => {
   return (
     <main className="flex items-center gap-3  ">
