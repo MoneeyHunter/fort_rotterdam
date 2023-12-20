@@ -1,0 +1,131 @@
+[33mcommit 8e4584c3b176f0f8474075bf7cd69173831a8eec[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Nurfadillah Umar <itsennuu@gmail.com>
+Date:   Mon Dec 18 17:55:57 2023 +0800
+
+    1-Navbar
+
+[33mcommit 6effb690c940700d12833d1f371f7e16a33aecc3[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: f59fadc 12d16ae
+Author: Nadiyah Amaliyah <118332537+naddiyh@users.noreply.github.com>
+Date:   Mon Dec 18 16:59:44 2023 +0800
+
+    Merge pull request #6 from MoneeyHunter/refactor/3-responsif-sub-hero
+    
+     refactor : 3 responsif-sub-hero
+
+[33mcommit 12d16ae6c48c0cdbe3bb75231bd7dfa0042bcdf8[m[33m ([m[1;31morigin/refactor/3-responsif-sub-hero[m[33m)[m
+Author: von-ai <kuhhakuzuhdi@gmail.com>
+Date:   Mon Dec 18 14:36:11 2023 +0700
+
+     refactor : 3 responsif-sub-hero
+
+[33mcommit f59fadcddef60ebf84564ac5ada5ab852a2d43fb[m
+Merge: 8508e84 572a41c
+Author: Nadiyah Amaliyah <118332537+naddiyh@users.noreply.github.com>
+Date:   Mon Dec 18 10:23:38 2023 +0800
+
+    Merge pull request #5 from MoneeyHunter/refactor/3-sub-hero
+    
+    refactor : 3-sub-hero
+
+[33mcommit 8508e844efd53ac18b10d5529b21eb084e85eaee[m
+Merge: b6f9110 76ea0c2
+Author: Nadiyah Amaliyah <118332537+naddiyh@users.noreply.github.com>
+Date:   Mon Dec 18 09:58:15 2023 +0800
+
+    Merge pull request #4 from MoneeyHunter/refactor/3-sub-hero
+    
+    Refactor/3 sub hero
+
+[33mcommit 572a41c04a957c828e6f8ad6065112a6a2459d63[m[33m ([m[1;31morigin/refactor/3-sub-hero[m[33m)[m
+Author: von-ai <kuhhakuzuhdi@gmail.com>
+Date:   Mon Dec 18 07:38:44 2023 +0700
+
+    refactor : 3-sub-hero
+
+[33mcommit 76ea0c2fd2c66febed4ad60e83dd6894066892df[m
+Author: von-ai <kuhhakuzuhdi@gmail.com>
+Date:   Sun Dec 17 21:36:22 2023 +0700
+
+    refactor : 3 sub-hero
+
+[33mcommit b6f9110e5715f42c0d523504da1f0b4643ce57e6[m
+Merge: f317c60 d7e4426
+Author: Nadiyah Amaliyah <118332537+naddiyh@users.noreply.github.com>
+Date:   Sun Dec 17 15:49:21 2023 +0800
+
+    Merge pull request #3 from MoneeyHunter/refactor/4-LihatGaleri
+    
+    refactor:4-lihat-galeri
+
+[33mcommit d7e44268ca84883dedd082f470f2794bc6ccfe29[m[33m ([m[1;31morigin/refactor/4-LihatGaleri[m[33m)[m
+Author: naddiyh <nadtss12@gmail.com>
+Date:   Sun Dec 17 15:27:54 2023 +0800
+
+    refactor:4-lihat-galeri
+
+[33mcommit 45de75d3b8760f1387c9b913117302ddecd56099[m[33m ([m[1;31morigin/feat/3-sub-hero[m[33m)[m
+Author: von-ai <kuhhakuzuhdi@gmail.com>
+Date:   Sun Dec 17 09:01:09 2023 +0700
+
+    feat : 3 sub-hero
+
+[33mcommit 050e7f3972850407392aafa7737e0fb472e2b74a[m
+Author: von-ai <kuhhakuzuhdi@gmail.com>
+Date:   Wed Dec 13 06:41:12 2023 +0700
+
+    feat : 3 sub-hero-responsif
+
+[33mcommit a8162337b048077083b1de1e6021a73f25af8d86[m
+Author: von-ai <kuhhakuzuhdi@gmail.com>
+Date:   Wed Dec 13 06:20:34 2023 +0700
+
+    feat : 3 sub-hero-responsif
+
+[33mcommit f317c6030cb66f69b80d30edcb2a9d0c37234907[m
+Merge: cec14e5 5e9c8f0
+Author: Nadiyah Amaliyah <118332537+naddiyh@users.noreply.github.com>
+Date:   Sun Dec 10 11:22:27 2023 +0800
+
+    Merge pull request #2 from MoneeyHunter/refactor/4/Lihat-Galeri
+    
+    refactor:4 Lihat Galeri
+
+[33mcommit 5e9c8f0814ce26860d32675a661754573c98cb05[m
+Author: naddiyh <nadtss12@gmail.com>
+Date:   Sun Dec 10 11:20:44 2023 +0800
+
+    refactor:4 Lihat Galeri
+
+[33mcommit cec14e5ae7080427808dfedf14dfad4e767abb03[m
+Merge: c2a6b7b 02c3a11
+Author: Nadiyah Amaliyah <118332537+naddiyh@users.noreply.github.com>
+Date:   Wed Dec 6 13:44:22 2023 +0800
+
+    Merge pull request #1 from MoneeyHunter/feat/4-Lihat-Galeri
+    
+    feat: 4 Responsive Lihat Galeri
+
+[33mcommit 02c3a114bb7e470b4f9e39aa5c64a038bd41b56f[m[33m ([m[1;31morigin/feat/4-Lihat-Galeri[m[33m)[m
+Author: naddiyh <nadtss12@gmail.com>
+Date:   Wed Dec 6 12:56:41 2023 +0800
+
+    feat: 4 Responsive Lihat Galeri
+
+[33mcommit c2a6b7be2b688b994ce568357efa57e7c8093be0[m[33m ([m[1;32m1-Navbar[m[33m)[m
+Author: naddiyh <nadtss12@gmail.com>
+Date:   Fri Nov 10 18:38:26 2023 +0800
+
+    updated
+
+[33mcommit 5290ca5e1ff76068850a6dd2afa44509d933929e[m
+Author: Nurfadillah Umar <itsennuu@gmail.com>
+Date:   Fri Nov 10 13:27:37 2023 +0800
+
+    initial commit
+
+[33mcommit 0e8da4034b6e508d009cce5d19400af3ffde53d6[m
+Author: MoneeyHunter <150272190+MoneeyHunter@users.noreply.github.com>
+Date:   Fri Nov 10 12:14:12 2023 +0800
+
+    Initial commit
