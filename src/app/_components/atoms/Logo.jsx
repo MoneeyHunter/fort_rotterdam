@@ -8,13 +8,12 @@ const Logo = () => {
     <main className="flex items-center gap-3  ">
       <Image
         src={LogoFortRotterdam}
-        width={90}
-        height={90}
+        width={45}
+        height={45}
         alt="Logo Gerbang Fort Rotterdam"
       />
-      <h1 className="text-heading-s font-bold text-white">
-        Fort <br />
-        Rotterdam
+      <h1 className="text-text-m font-bold text-white">
+        FORT <br /> ROTTERDAM
       </h1>
     </main>
   );

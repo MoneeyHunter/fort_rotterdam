@@ -23,7 +23,7 @@ const Navbar = ({showBackground = true}) => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 px-4 py-5 flex justify-between items-center transition-all ${
+      className={`fixed top-0 left-0 right-0 px-4 py-2 flex justify-between items-center transition-all ${
         isScrolled && showBackground || showBackground===false ? "z-50 bg-primary-maroon" : "shadow-none"
       } shadow-md`}
     >
