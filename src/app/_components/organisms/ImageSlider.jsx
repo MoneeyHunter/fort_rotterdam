@@ -15,13 +15,13 @@ const ImageSlider = () => {
       imgSrc: "/images/patung_kuda.webp",
     },
     {
-      imgSrc: "/images/Slider1.jpg",
+      imgSrc: "/images/Slider1.webp",
     },
     {
-      imgSrc: "/images/Slider2.jpg",
+      imgSrc: "/images/Slider2.webp",
     },
     {
-      imgSrc: "/images/Slider3.jpg",
+      imgSrc: "/images/Slider3.webp",
     },
   ];
 
