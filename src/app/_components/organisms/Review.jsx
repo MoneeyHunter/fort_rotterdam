@@ -5,7 +5,6 @@ import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
 import Image from "next/image";
 import DataReview from "../molecules/DataReview";
 import BoxReview from "../molecules/BoxReview";
-import Footer from "../molecules/Footer";
 
 const Review = () => {
   const [cards, setCards] = useState(DataReview);
@@ -107,7 +106,6 @@ const Review = () => {
           </section>
         </section>
       </section>
-      <Footer />
     </main>
   );
 };
