@@ -55,7 +55,7 @@ const SubHero = () => {
             </Box>
           </div>
 
-          <div data-aos="fade-down">
+          <div data-aos="fade-up">
             <Box>
               <div
                 className="absolute 
