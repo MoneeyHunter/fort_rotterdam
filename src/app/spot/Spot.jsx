@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import dataSpot from "./mock";
+import Footer from "src/app/_components/molecules/Footer"
 
 const Spot = () => {
   const [indexBigSpot, setIndexBigSpot] = useState(0);
@@ -114,6 +115,7 @@ const Spot = () => {
         </section>
       </section>
       <section className="w-full h-[200px] bg-white"></section>
+      <Footer/>
     </main>
   );
 };
