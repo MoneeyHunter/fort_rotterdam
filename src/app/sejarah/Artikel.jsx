@@ -5,6 +5,7 @@ import React from "react";
 import Link from "next/link";
 import BoxImage from "src/app/_components/molecules/BoxImage";
 import { useEffect } from "react";
+import Footer from "src/app/_components/molecules/Footer"
 
 import ReactHtmlParser from "react-html-parser";
 import ArtikelSejarah from "./mocks/konten";
@@ -20,7 +21,6 @@ const Artikel = () => {
             width={1920}
             height={56}
             className="h-64 lg:h-96"
-            objectFit="w-screen" objectPosition="w-screen"
           />
         </div>
         <div
@@ -40,7 +40,7 @@ const Artikel = () => {
           <p
             className="relative text-center text-zinc-100 tracking-widest
             text-[9px]
-            lg:text-[15px]"
+            lg:text-base"
           >
             "Benteng bukan hanya sebuah struktur batu, melainkan saksi
             <br />
@@ -56,49 +56,49 @@ const Artikel = () => {
         </section>
         <section className="max-lg:hidden">
           <section className="pr-5 relative">
-            <BoxImage className="flex absolute left-60">
-              <div className="absolute left-16 top-16" data-aos="fade-left">
+            <BoxImage className="flex absolute left-60 -z-10">
+              <div className="absolute left-16 top-16" data-aos="fade-up">
                 <Image
-                  src="/images/artikelEmpat.webp"
-                  width={300}
+                  src="/images/artikelEmpatt.webp"
+                  width={500}
                   height={100}
-                  className="rounded-[10px] shadow-lg"
+                  className="rounded-lg shadow-lg"
                   style={{ objectFit: "cover", objectPosition: "center" }}
                   alt="foto1"
                 />
               </div>
             </BoxImage>
-            <BoxImage>
-              <div className="absolute left-16 top-16" data-aos="fade-left">
+            <BoxImage className="-z-10">
+              <div className="absolute left-16 top-16" data-aos="fade-up">
                 <Image
-                  src="/images/artikelDua.webp"
-                  width={300}
+                  src="/images/artikelDuaa.webp"
+                  width={500}
                   height={100}
-                  className="rounded-[10px] shadow-lg"
+                  className="rounded-lg shadow-lg"
                   style={{ objectFit: "cover", objectPosition: "center" }}
                   alt="foto2"
                 />
               </div>
             </BoxImage>
-            <BoxImage>
-              <div className="absolute left-16 top-16" data-aos="fade-left">
+            <BoxImage className="-z-10">
+              <div className="absolute left-16 top-16" data-aos="fade-up">
                 <Image
-                  src="/images/artikelTiga.webp"
-                  width={300}
+                  src="/images/artikelTigaa.webp"
+                  width={500}
                   height={100}
-                  className="rounded-[10px] shadow-lg"
+                  className="rounded-lg shadow-lg"
                   style={{ objectFit: "cover", objectPosition: "center" }}
                   alt="foto3"
                 />
               </div>
             </BoxImage>
-            <BoxImage>
-              <div className="absolute left-16 top-16" data-aos="fade-left">
+            <BoxImage className="-z-10">
+              <div className="absolute left-16 top-16" data-aos="fade-up">
                 <Image
-                  src="/images/artikelSatuuu.webp"
-                  width={300}
+                  src="/images/artikelSatuu.webp"
+                  width={500}
                   height={100}
-                  className="rounded-[10px] shadow-lg"
+                  className="rounded-lg shadow-lg"
                   style={{ objectFit: "cover", objectPosition: "center" }}
                   alt="foto4"
                 />
@@ -107,6 +107,7 @@ const Artikel = () => {
           </section>
         </section>
       </section>
+      <Footer/>
     </main>
   );
 };
