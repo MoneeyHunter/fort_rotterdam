@@ -13,7 +13,7 @@ const SubHero = () => {
         <section
           className="text-primary-maroon text-center font-bold text-heading-l pt-14  
           lg:text-heading-xl
-          md:text-[45px]"
+          md:text-5xl"
         >
           <h1 className="uppercase">informasi umum</h1>
         </section>
@@ -130,7 +130,7 @@ const SubHero = () => {
       <section className="relative w-full h-[250px] md:h-[400px] lg:h-[500px] bg-primary-maroon font-bold text-white flex justify-center items-center uppecercase">
         <section data-aos="fade-up" className="flex">
           <p className="text-6xl translate-x-0  lg:text-7xl">“</p>
-          <p className="lg:text-heading-l pt-8 md:text-heading-m text-l  uppercase -translate-y-2">
+          <p className="lg:text-heading-xl pt-8 md:text-heading-m text-l  uppercase -translate-y-2">
             sejarah mengungkapkan masa lalu,
             <br />
             memberitahu masa kini,
