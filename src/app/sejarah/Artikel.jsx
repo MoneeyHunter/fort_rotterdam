@@ -1,11 +1,20 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 import BoxImage from "src/app/_components/molecules/BoxImage";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 import ReactHtmlParser from "react-html-parser";
 import ArtikelSejarah from "./mocks/konten";
 const Artikel = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <main className="relative">
       {/* Header */}
@@ -17,6 +26,7 @@ const Artikel = () => {
             width={1920}
             height={56}
             className="h-64 lg:h-96"
+            objectFit="w-screen" objectPosition="w-screen"
           />
         </div>
         <div
@@ -24,22 +34,25 @@ const Artikel = () => {
             w-full h-64
             lg:h-96"
         ></div>
-        <p
-          className="relative text-white text-center font-bold text-2xl 
-            pt-24
-            lg:pt-44 lg:text-5xl"
-        >
-          SEJARAH FORT ROTTERDAM
-        </p>
-        <p
-          className="relative text-center text-zinc-100 tracking-widest
-          text-[9px]
-          lg:text-[15px]"
-        >
-          "Benteng bukan hanya sebuah struktur batu, melainkan saksi
+        <div data-aos="fade-up">
+          <p
+            className="relative text-white text-center font-bold text-2xl 
+              pt-24
+              lg:pt-44 lg:text-5xl"
+          >
+            SEJARAH FORT ROTTERDAM
+          </p>
           <br />
-          bisu dari zaman yang telah berlalu."
-        </p>
+          <p
+            className="relative text-center text-zinc-100 tracking-widest
+            text-[9px]
+            lg:text-[15px]"
+          >
+            "Benteng bukan hanya sebuah struktur batu, melainkan saksi
+            <br />
+            bisu dari zaman yang telah berlalu."
+          </p>
+        </div>
       </section>
 
       {/* Artikel */}
@@ -50,48 +63,48 @@ const Artikel = () => {
         <section className="max-lg:hidden">
           <section className="pr-5 relative">
             <BoxImage className="flex absolute left-60">
-              <div className="absolute left-16 top-16">
+              <div className="absolute left-16 top-16" data-aos="fade-left">
                 <Image
                   src="/images/artikelEmpat.webp"
                   width={300}
                   height={100}
-                  className="rounded-[20px] shadow-lg"
+                  className="rounded-[10px] shadow-lg"
                   style={{ objectFit: "cover", objectPosition: "center" }}
                   alt="foto1"
                 />
               </div>
             </BoxImage>
             <BoxImage>
-              <div className="absolute left-16 top-16">
+              <div className="absolute left-16 top-16" data-aos="fade-left">
                 <Image
                   src="/images/artikelDua.webp"
                   width={300}
                   height={100}
-                  className="rounded-[20px] shadow-lg"
+                  className="rounded-[10px] shadow-lg"
                   style={{ objectFit: "cover", objectPosition: "center" }}
                   alt="foto2"
                 />
               </div>
             </BoxImage>
             <BoxImage>
-              <div className="absolute left-16 top-16">
+              <div className="absolute left-16 top-16" data-aos="fade-left">
                 <Image
                   src="/images/artikelTiga.webp"
                   width={300}
                   height={100}
-                  className="rounded-[20px] shadow-lg"
+                  className="rounded-[10px] shadow-lg"
                   style={{ objectFit: "cover", objectPosition: "center" }}
                   alt="foto3"
                 />
               </div>
             </BoxImage>
             <BoxImage>
-              <div className="absolute left-16 top-16">
+              <div className="absolute left-16 top-16" data-aos="fade-left">
                 <Image
                   src="/images/artikelSatuuu.webp"
                   width={300}
                   height={100}
-                  className="rounded-[20px] shadow-lg"
+                  className="rounded-[10px] shadow-lg"
                   style={{ objectFit: "cover", objectPosition: "center" }}
                   alt="foto4"
                 />

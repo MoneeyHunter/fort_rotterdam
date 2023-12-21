@@ -1,9 +1,7 @@
 //Membuat Primary Circle untuk Tiap Icon
 "use client";
 
-const primary = (props) => {
-  const { children, className, onClick } = props;
-
+const primary = ({ children, className, onClick = () => {} }) => {
   return (
     <button
       className={`flex rounded-full transition-transform justify-center items-center ${className}`}
@@ -12,10 +10,6 @@ const primary = (props) => {
       {children}
     </button>
   );
-};
-
-primary.defaultProps = {
-  onClick: () => {},
 };
 
 export default primary;
