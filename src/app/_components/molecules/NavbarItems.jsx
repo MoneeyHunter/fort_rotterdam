@@ -54,7 +54,7 @@ const NavbarItems = () => {
             href={link.href}
             className={`flex font-bold text-text-l relative transition duration-300 transform ${
               isOpen
-                ? "text-primary-maroon px-20 py-6 hover:bg-primary-maroon hover:bg-opacity-20 lg:border-none"
+                ? "text-primary-maroon px-20 py-3 hover:bg-primary-maroon hover:bg-opacity-20 lg:border-none"
                 : "py-3 pl-8 text-white hover:scale-110 "
             }`}
           >
