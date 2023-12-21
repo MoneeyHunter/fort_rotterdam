@@ -5,6 +5,7 @@ import React from "react";
 import Link from "next/link";
 import BoxImage from "src/app/_components/molecules/BoxImage";
 import { useEffect } from "react";
+import Footer from "src/app/_components/molecules/Footer";
 
 import ReactHtmlParser from "react-html-parser";
 import ArtikelSejarah from "./mocks/konten";
@@ -32,7 +33,7 @@ const Artikel = () => {
           <p
             className="relative text-white text-center font-bold text-2xl 
               pt-24
-              lg:pt-44 lg:text-5xl"
+              lg:pt-44 lg:text-heading-xl"
           >
             SEJARAH FORT ROTTERDAM
           </p>
@@ -40,7 +41,7 @@ const Artikel = () => {
           <p
             className="relative text-center text-zinc-100 tracking-widest
             text-[9px]
-            lg:text-[15px]"
+            lg:text-base"
           >
             "Benteng bukan hanya sebuah struktur batu, melainkan saksi
             <br />
@@ -57,10 +58,10 @@ const Artikel = () => {
         <section className="max-lg:hidden">
           <section className="pr-5 relative">
             <BoxImage className="flex absolute left-60">
-              <div className="absolute left-16 top-16" data-aos="fade-left">
+              <div className="absolute left-16 top-16" data-aos="fade-left" data-aos-duration="4000">
                 <Image
                   src="/images/artikelEmpat.webp"
-                  width={300}
+                  width={500}
                   height={100}
                   className="rounded-[10px] shadow-lg"
                   style={{ objectFit: "cover", objectPosition: "center" }}
@@ -69,10 +70,10 @@ const Artikel = () => {
               </div>
             </BoxImage>
             <BoxImage>
-              <div className="absolute left-16 top-16" data-aos="fade-left">
+              <div className="absolute left-16 top-16" data-aos="fade-left" data-aos-duration="4000">
                 <Image
                   src="/images/artikelDua.webp"
-                  width={300}
+                  width={500}
                   height={100}
                   className="rounded-[10px] shadow-lg"
                   style={{ objectFit: "cover", objectPosition: "center" }}
@@ -81,10 +82,10 @@ const Artikel = () => {
               </div>
             </BoxImage>
             <BoxImage>
-              <div className="absolute left-16 top-16" data-aos="fade-left">
+              <div className="absolute left-16 top-16" data-aos="fade-left" data-aos-duration="4000">
                 <Image
                   src="/images/artikelTiga.webp"
-                  width={300}
+                  width={500}
                   height={100}
                   className="rounded-[10px] shadow-lg"
                   style={{ objectFit: "cover", objectPosition: "center" }}
@@ -93,10 +94,10 @@ const Artikel = () => {
               </div>
             </BoxImage>
             <BoxImage>
-              <div className="absolute left-16 top-16" data-aos="fade-left">
+              <div className="absolute left-16 top-16" data-aos="fade-left" data-aos-duration="4000">
                 <Image
                   src="/images/artikelSatuuu.webp"
-                  width={300}
+                  width={500}
                   height={100}
                   className="rounded-[10px] shadow-lg"
                   style={{ objectFit: "cover", objectPosition: "center" }}
@@ -107,6 +108,7 @@ const Artikel = () => {
           </section>
         </section>
       </section>
+      <Footer/>
     </main>
   );
 };
