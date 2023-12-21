@@ -1,5 +1,5 @@
 import Artikel from "./Artikel";
-import Navbar from "../_components/organisms/Navbar";
+import Navbar from "src/app/_components/organisms/Navbar";
 const Sejarah = () => {
   return(
     <main>
