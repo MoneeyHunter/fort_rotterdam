@@ -76,7 +76,7 @@ const Artikel = () => {
                   height={100}
                   className="rounded-lg shadow-lg"
                   style={{ objectFit: "cover", objectPosition: "center" }}
-                  alt="foto2"
+                  alt="fotoDua"
                 />
               </div>
             </BoxImage>
