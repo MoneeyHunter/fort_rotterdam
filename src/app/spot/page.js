@@ -1,11 +1,21 @@
+"use client";
+
 import Spot from "./Spot";
 import Navbar from "src/app/_components/organisms/Navbar";
-const Sejarah = () => {
-  return(
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
+const SpotPage = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+  return (
     <main>
-        
-        <Spot/>
+      <Spot />
+      <Navbar />
     </main>
-  )
+  );
 };
-export default Spot;
+export default SpotPage;

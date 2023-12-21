@@ -38,29 +38,30 @@ const Spot = () => {
             w-full h-64
             lg:h-96"
         ></div>
-
-        <p
-          className="relative text-white text-center font-bold text-2xl 
-            pt-24
-            lg:pt-44 lg:text-5xl uppercase"
-        >
-          spot menarik fort rotterdam
-        </p>
-        <p
-          className="relative text-center text-zinc-100 tracking-widest
-          text-[9px]
-          lg:text-[15px]"
-        >
-          "Benteng bukan hanya sebuah struktur batu, melainkan saksi
-          <br />
-          bisu dari zaman yang telah berlalu."
-        </p>
+        <div data-aos="fade-up">
+          <p
+            className="relative text-white text-center font-bold text-2xl 
+              pt-24
+              lg:pt-44 lg:text-5xl uppercase"
+          >
+            spot menarik fort rotterdam
+          </p>
+          <p
+            className="relative text-center text-zinc-100 tracking-widest
+            text-[9px]
+            lg:text-[15px]"
+          >
+            "Benteng bukan hanya sebuah struktur batu, melainkan saksi
+            <br />
+            bisu dari zaman yang telah berlalu."
+          </p>
+        </div>
       </section>
       <section className="relative md:flex rounded-full">
         <section className="px-8 ">
-          <section className="pt-40" id="gambarUtama ">
+          <section className="pt-40" id="gambarUtama" data-aos="fade-right">
             <section className="relative group">
-              <div className="relative">
+              <div className="relative" >
                 <Image
                   src={spot[indexBigSpot].imgPath}
                   alt={spot[indexBigSpot].imgAlt}
@@ -86,6 +87,8 @@ const Spot = () => {
                 onClick={() => {
                   setIndexBigSpot(i);
                 }}
+                key={i}
+                data-aos="zoom-in"
               >
                 <section>
                   <div className="relative group">

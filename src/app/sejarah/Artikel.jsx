@@ -4,17 +4,11 @@ import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 import BoxImage from "src/app/_components/molecules/BoxImage";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 import ReactHtmlParser from "react-html-parser";
 import ArtikelSejarah from "./mocks/konten";
 const Artikel = () => {
-  useEffect(() => {
-    AOS.init();
-    AOS.refresh();
-  }, []);
   return (
     <main className="relative">
       {/* Header */}

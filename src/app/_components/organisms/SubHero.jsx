@@ -3,15 +3,9 @@
 import Box from "../molecules/Box";
 import Image from "next/image";
 import Circle from "../atoms/PrimaryCircle";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 const SubHero = () => {
-  useEffect(() => {
-    AOS.init();
-    AOS.refresh();
-  }, []);
   return (
     <main className="flex flex-col gap-24 lg:gap-36">
       <section className="">
