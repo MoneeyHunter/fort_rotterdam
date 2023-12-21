@@ -11,3 +11,14 @@
 body {
   overflow-x: hidden;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #ffff;
+}
+::-webkit-scrollbar-thumb {
+  background: #801517;
+  border-radius: 4px;
+}
