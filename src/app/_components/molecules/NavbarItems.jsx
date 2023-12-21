@@ -29,9 +29,9 @@ const NavbarItems = () => {
   //Link yang ada di Navbar
   const links = [
     { text: "Beranda", href: "/" },
-    { text: "Sejarah", href: "/" },
+    { text: "Sejarah", href: "/sejarah" },
     { text: "Galeri", href: "/" },
-    { text: "Spot Menarik", href: "/" },
+    { text: "Spot Menarik", href: "/spot" },
     {
       text: "Informasi Tempat",
       href: "/",
