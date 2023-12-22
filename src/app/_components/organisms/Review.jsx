@@ -51,6 +51,7 @@ const Review = () => {
               width={180}
               height={180}
               className=" absolute scale-[.60] -left-10 -top-8 md:scale-[100%] md:-left-3 md:top-0"
+              alt="decoration"
             />
             <h3 className="text-white uppercase font-bold text-center   text-heading-m md:text-heading-xl pt-12">
               Apa kata mereka?
