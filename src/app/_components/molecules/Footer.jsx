@@ -57,7 +57,7 @@ const footer = () => {
 
   return (
     <>
-      <section className="relative w-screen px-7 py-20 flex-col flex mx-auto md:py-24 lg:items-center lg:px-20 ">
+      <section className="relative w-screen px-7 py-20 flex-col flex mx-auto  lg:items-center lg:px-20 ">
         <section
           className="absolute top-0 h-full w-screen left-0 -z-10"
           style={{
