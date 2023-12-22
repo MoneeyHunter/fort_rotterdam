@@ -128,7 +128,9 @@ const footer = () => {
               {/* Email Input */}
               <input
                 type="email"
-                for="email"
+                id="email"
+                value={email}
+                onChange={handleEmailChange}
                 placeholder="nama@gmail.com"
                 className={`rounded-lg border w-full p-3 h-8 focus:outline-none text-text-s focus:border-secondary-teal `}
               />

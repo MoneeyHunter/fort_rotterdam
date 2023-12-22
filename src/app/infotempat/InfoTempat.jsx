@@ -79,6 +79,7 @@ const InfoTempat = () => {
                   height={35}
                   objectFit="cover"
                   objectPosition="center"
+                  alt="Icon Jam"
                 />
                 <p className="font-bold text-primary-maroon uppercase text-heading-s md:text-heading-m lg:text-heading-l">
                   Jam Buka
@@ -123,6 +124,7 @@ const InfoTempat = () => {
                 objectFit="cover"
                 objectPosition="center"
                 className="rounded-[10px] "
+                alt="Informasi"
               />
             </div>
           </section>
@@ -141,6 +143,7 @@ const InfoTempat = () => {
                   height={35}
                   objectFit="cover"
                   objectPosition="center"
+                  alt="Icon Uang"
                 />
                 <p className="font-bold text-right text-primary-maroon uppercase text-heading-s md:text-heading-m lg:text-heading-l">
                   Tiket Masuk
@@ -185,6 +188,7 @@ const InfoTempat = () => {
               objectFit="cover"
               objectPosition="center"
               className="rounded-[10px] "
+              alt="Museum"
             />
           </section>
         </section>
