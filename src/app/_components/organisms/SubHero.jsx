@@ -15,7 +15,9 @@ const SubHero = () => {
           lg:text-heading-xl
           md:text-5xl"
         >
-          <h1 className="uppercase">informasi umum</h1>
+          <p className="uppercase text-[34px] lg:text-heading-xl">
+            informasi umum
+          </p>
         </section>
 
         <section className="flex gap-5 justify-center flex-wrap items-center pt-16 sm:px-6 lg:px-0 md:px-0">
