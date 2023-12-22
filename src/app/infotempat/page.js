@@ -11,7 +11,7 @@ export default function InfoTempat() {
     AOS.refresh();
   }, []);
   return (
-    <main>
+    <main className="overflow-hidden">
       <Informasi />
       <Navbar />
     </main>

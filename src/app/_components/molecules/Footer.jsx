@@ -145,7 +145,7 @@ const footer = () => {
                         <MdEmail className="w-8 h-8" />
                       </Circle>
                       <span className="text-text-s text-black px-2 leading-relaxed hover:text-primary-maroon ">
-                        uptmuseumdantamanbudaya@sulselprov.go.id
+                        fortrotterdam@gmail.com
                       </span>
                     </a>
                   </div>

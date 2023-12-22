@@ -52,13 +52,17 @@ const Artikel = () => {
 
       {/* Artikel */}
       <section className="flex relative items-center justify-center">
-        <section className="lg:py-44 lg:px-16 py-44 px-0 max-lg:px-8 text-justify tracking-widest">
+        <section className="lg:py-44 lg:px-16 py-32 px-0 max-lg:px-8 text-justify tracking-widest">
           {ReactHtmlParser(ArtikelSejarah)}
         </section>
         <section className="max-lg:hidden">
           <section className="relative pt-24">
             <BoxImage className="flex absolute left-60 -z-10">
-              <div className="absolute px-7 top-16" data-aos="fade-up" data-aos-duration="4000">
+              <div
+                className="absolute px-7 top-16"
+                data-aos="fade-up"
+                data-aos-duration="4000"
+              >
                 <Image
                   src="/images/artikelEmpatt.webp"
                   width={350}
@@ -71,7 +75,11 @@ const Artikel = () => {
             </BoxImage>
 
             <BoxImage className="-z-10">
-              <div className="absolute px-7 top-16" data-aos="fade-up" data-aos-duration="4000">
+              <div
+                className="absolute px-7 top-16"
+                data-aos="fade-up"
+                data-aos-duration="4000"
+              >
                 <Image
                   src="/images/artikelDuaa.webp"
                   width={350}
@@ -84,7 +92,11 @@ const Artikel = () => {
             </BoxImage>
 
             <BoxImage className="-z-10">
-              <div className="absolute px-7 top-16" data-aos="fade-up" data-aos-duration="4000">
+              <div
+                className="absolute px-7 top-16"
+                data-aos="fade-up"
+                data-aos-duration="4000"
+              >
                 <Image
                   src="/images/artikelTigaa.webp"
                   width={350}
@@ -97,7 +109,11 @@ const Artikel = () => {
             </BoxImage>
 
             <BoxImage className="-z-10">
-              <div className="absolute px-7 top-16" data-aos="fade-up" data-aos-duration="4000">
+              <div
+                className="absolute px-7 top-16"
+                data-aos="fade-up"
+                data-aos-duration="4000"
+              >
                 <Image
                   src="/images/artikelSatuu.webp"
                   width={350}
@@ -111,7 +127,7 @@ const Artikel = () => {
           </section>
         </section>
       </section>
-      <Footer/>
+      <Footer />
     </main>
   );
 };
