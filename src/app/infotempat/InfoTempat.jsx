@@ -1,5 +1,5 @@
 "use client";
-import BoxInformasi from "./molecules/BoxInfomasi";
+import BoxInformasi from "./BoxInfomasi";
 import Link from "next/link";
 import Image from "next/image";
 import Footer from "../_components/molecules/Footer";
@@ -34,7 +34,10 @@ const InfoTempat = () => {
         </section>
 
         {/* Section Tips Wisata */}
-        <section className="flex flex-col items-center justify-center gap-16 py-12 md:py-24  w-screen" id="tipswisata">
+        <section
+          className="flex flex-col items-center justify-center gap-16 py-12 md:py-24  w-screen"
+          id="tipswisata"
+        >
           <p className="text-heading-m md:text-heading-l text-center text-primary-maroon font-bold uppercase">
             Tips Wisata Fort Rotterdam
           </p>
@@ -59,10 +62,13 @@ const InfoTempat = () => {
           </div>
         </section>
 
-        <section className="flex flex-col gap-32 py-16 px-6 md:px-8" id="waktukunjungan">
+        <section
+          className="flex flex-col gap-32 py-16 px-6 md:px-8"
+          id="waktukunjungan"
+        >
           <section
             data-aos="fade-up"
-            data-aos-duration="5000"
+            data-aos-duration="4000"
             className="relative flex flex-col-reverse gap-10 md:flex md:flex-row justify-between md:px-20"
           >
             <section className=" w-full ">
@@ -122,9 +128,10 @@ const InfoTempat = () => {
           </section>
 
           <section
-            className="flex flex-col-reverse md:flex md:flex-row justify-between gap-10 md:px-20 w-full " id="tiketmasuk"
+            className="flex flex-col-reverse md:flex md:flex-row justify-between gap-10 md:px-20 w-full "
+            id="tiketmasuk"
             data-aos="fade-up"
-            data-aos-duration="5000"
+            data-aos-duration="4000"
           >
             <section className="w-full ">
               <div className="flex gap-3">
@@ -183,7 +190,8 @@ const InfoTempat = () => {
         </section>
 
         <section
-          className="py-16  px-8 md:px-24 gap-5 flex flex-col justify-start" id="lokasi"
+          className="py-16  px-8 md:px-24 gap-5 flex flex-col justify-start"
+          id="lokasi"
           data-aos="fade-up"
           data-aos-duration="4000"
         >

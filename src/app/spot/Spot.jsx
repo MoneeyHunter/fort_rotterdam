@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import dataSpot from "./mock";
-import Footer from "../_components/molecules/Footer"
+import Footer from "../_components/molecules/Footer";
 
 const Spot = () => {
   const [indexBigSpot, setIndexBigSpot] = useState(0);
@@ -13,8 +13,8 @@ const Spot = () => {
     const maxIndex = spot.length - 1;
     const interval = setInterval(() => {
       currentIndexBigSpot++;
-      if(currentIndexBigSpot > maxIndex) {
-        currentIndexBigSpot = 0
+      if (currentIndexBigSpot > maxIndex) {
+        currentIndexBigSpot = 0;
       }
       setIndexBigSpot(currentIndexBigSpot);
     }, 5000);
@@ -60,14 +60,21 @@ const Spot = () => {
       </section>
       <section className="relative md:flex rounded-full">
         <section className="px-8 ">
-          <section className="pt-40" id="gambarUtama" data-aos="fade-right" data-aos-duration="4000">
+          <section
+            className="pt-40"
+            id="gambarUtama"
+            data-aos="fade-right"
+            data-aos-duration="4000"
+          >
             <section className="relative group">
-              <div className="relative" >
+              <div className="relative">
                 <Image
                   src={spot[indexBigSpot].imgPath}
                   alt={spot[indexBigSpot].imgAlt}
                   width={600}
                   height={600}
+                  objectFit="cover"
+                  objectPosition="center"
                   className="rounded-lg"
                 />
                 <div className="absolute pt-40 inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
@@ -89,7 +96,8 @@ const Spot = () => {
                   setIndexBigSpot(i);
                 }}
                 key={i}
-                data-aos="zoom-in " data-aos-duration="4000"
+                data-aos="zoom-in "
+                data-aos-duration="4000"
               >
                 <section>
                   <div className="relative group">
@@ -98,6 +106,8 @@ const Spot = () => {
                       width={281}
                       height={281}
                       alt={v.imgAlt}
+                      objectFit="cover"
+                      objectPosition="center"
                       className="col-span-1 rounded-lg"
                     />
                     <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
@@ -115,7 +125,7 @@ const Spot = () => {
         </section>
       </section>
       <section className="w-full h-[200px] bg-white"></section>
-      <Footer/>
+      <Footer />
     </main>
   );
 };
