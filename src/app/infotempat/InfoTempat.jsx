@@ -81,7 +81,7 @@ const InfoTempat = () => {
                   objectPosition="center"
                 />
                 <p className="font-bold text-primary-maroon uppercase text-heading-s md:text-heading-m lg:text-heading-l">
-                  Waktu Kunjungan
+                  Jam Buka
                 </p>
               </div>
 
