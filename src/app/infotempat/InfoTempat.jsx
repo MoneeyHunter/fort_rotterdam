@@ -63,7 +63,7 @@ const InfoTempat = () => {
           <section
             data-aos="fade-up"
             data-aos-duration="5000"
-            className="flex flex-col-reverse gap-10 md:flex md:flex-row justify-between md:px-20"
+            className="relative flex flex-col-reverse gap-10 md:flex md:flex-row justify-between md:px-20 border"
           >
             <section className=" w-full ">
               <div className="flex gap-3">
@@ -82,8 +82,8 @@ const InfoTempat = () => {
               <table className="md:w-5/6 md:h-1/2 border w-full h-3/4 ">
                 <caption className="caption-top text-justify py-5 ">
                   Waktu kunjungan ke Benteng Fort Rotterdam dapat dilakukan
-                  setiap hari selama jam operasional yang umumnya dimulai pada
-                  pagi hari dan berakhir pada sore atau malam hari
+                  setiap hari selama jam operasional yang dimulai dari pagi hari
+                  hingga pada malam hari
                 </caption>
                 <thead className="border   bg-primary-maroon">
                   <tr className="border">
@@ -113,7 +113,7 @@ const InfoTempat = () => {
               <Image
                 src={"/images/imginfo.webp"}
                 width={500}
-                height={10}
+                height={100}
                 objectFit="cover"
                 objectPosition="center"
                 className="rounded-[10px] "
@@ -122,7 +122,7 @@ const InfoTempat = () => {
           </section>
 
           <section
-            className="flex flex-col-reverse md:flex md:flex-row justify-between gap-10 md:px-20 w-full"
+            className="flex flex-col-reverse md:flex md:flex-row justify-between gap-10 md:px-20 w-full border"
             data-aos="fade-up"
             data-aos-duration="5000"
           >
@@ -177,7 +177,7 @@ const InfoTempat = () => {
               height={10}
               objectFit="cover"
               objectPosition="center"
-              className="rounded-[10px]"
+              className="rounded-[10px] "
             />
           </section>
         </section>
@@ -199,12 +199,10 @@ const InfoTempat = () => {
           <div className="flex flex-grow">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d496.7265067724445!2d119.40528193078129!3d-5.133947051937677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbf02b011ce37ef%3A0x28ed3928c1b6cf23!2sFort%20Rotterdam!5e0!3m2!1sen!2sid!4v1703168152416!5m2!1sen!2sid"
-              width="566"
-              height="350"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-              className="rounded-[25px]"
+              className="rounded-[25px] w-full h-[350px]"
             ></iframe>
           </div>
         </section>
