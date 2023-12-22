@@ -60,12 +60,7 @@ const Spot = () => {
       </section>
       <section className="relative md:flex rounded-full">
         <section className="px-8 ">
-          <section
-            className="pt-40"
-            id="gambarUtama"
-            data-aos="fade-right"
-            data-aos-duration="4000"
-          >
+          <section className="pt-40" id="gambarUtama" data-aos="fade-right" data-aos-duration="4000">
             <section className="relative group">
               <div className="relative">
                 <Image
@@ -125,7 +120,7 @@ const Spot = () => {
         </section>
       </section>
       <section className="w-full h-[200px] bg-white"></section>
-      <Footer />
+      <Footer/>
     </main>
   );
 };

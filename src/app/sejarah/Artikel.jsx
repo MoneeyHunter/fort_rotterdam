@@ -3,11 +3,12 @@
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
-import BoxImage from "src/app/_components/molecules/BoxImage";
 import { useEffect } from "react";
+import ReactHtmlParser from "react-html-parser";
+
+import BoxImage from "src/app/_components/molecules/BoxImage";
 import Footer from "src/app/_components/molecules/Footer";
 
-import ReactHtmlParser from "react-html-parser";
 import ArtikelSejarah from "./mocks/konten";
 const Artikel = () => {
   return (
@@ -21,7 +22,6 @@ const Artikel = () => {
             width={1920}
             height={56}
             className="h-64 lg:h-96"
-            objectFit="w-screen" objectPosition="w-screen"
           />
         </div>
         <div
@@ -57,49 +57,52 @@ const Artikel = () => {
         </section>
         <section className="max-lg:hidden">
           <section className="pr-5 relative">
-            <BoxImage className="flex absolute left-60">
-              <div className="absolute left-16 top-16" data-aos="fade-left" data-aos-duration="4000">
+            <BoxImage className="flex absolute left-60 -z-10">
+              <div className="absolute left-16 top-16" data-aos="fade-up" data-aos-duration="4000">
                 <Image
-                  src="/images/artikelEmpat.webp"
+                  src="/images/artikelEmpatt.webp"
                   width={500}
                   height={100}
-                  className="rounded-[10px] shadow-lg"
+                  className="rounded-lg shadow-lg"
                   style={{ objectFit: "cover", objectPosition: "center" }}
                   alt="foto1"
                 />
               </div>
             </BoxImage>
-            <BoxImage>
-              <div className="absolute left-16 top-16" data-aos="fade-left" data-aos-duration="4000">
+
+            <BoxImage className="-z-10">
+              <div className="absolute left-16 top-16" data-aos="fade-up" data-aos-duration="4000">
                 <Image
-                  src="/images/artikelDua.webp"
+                  src="/images/artikelDuaa.webp"
                   width={500}
                   height={100}
-                  className="rounded-[10px] shadow-lg"
+                  className="rounded-lg shadow-lg"
                   style={{ objectFit: "cover", objectPosition: "center" }}
-                  alt="foto2"
+                  alt="fotoDua"
                 />
               </div>
             </BoxImage>
-            <BoxImage>
-              <div className="absolute left-16 top-16" data-aos="fade-left" data-aos-duration="4000">
+
+            <BoxImage className="-z-10">
+              <div className="absolute left-16 top-16" data-aos="fade-up" data-aos-duration="4000">
                 <Image
-                  src="/images/artikelTiga.webp"
+                  src="/images/artikelTigaa.webp"
                   width={500}
                   height={100}
-                  className="rounded-[10px] shadow-lg"
+                  className="rounded-lg shadow-lg"
                   style={{ objectFit: "cover", objectPosition: "center" }}
                   alt="foto3"
                 />
               </div>
             </BoxImage>
-            <BoxImage>
-              <div className="absolute left-16 top-16" data-aos="fade-left" data-aos-duration="4000">
+
+            <BoxImage className="-z-10">
+              <div className="absolute left-16 top-16" data-aos="fade-up" data-aos-duration="4000">
                 <Image
-                  src="/images/artikelSatuuu.webp"
+                  src="/images/artikelSatuu.webp"
                   width={500}
                   height={100}
-                  className="rounded-[10px] shadow-lg"
+                  className="rounded-lg shadow-lg"
                   style={{ objectFit: "cover", objectPosition: "center" }}
                   alt="foto4"
                 />
