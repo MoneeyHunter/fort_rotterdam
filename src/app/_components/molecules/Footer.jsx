@@ -152,7 +152,6 @@ const footer = () => {
                 </section>
               </section>
             </section>
-            <p className="invisible min-[1200px]:visible border-l border-white absolute top-0 h-full right-[23%]"></p>
           </section>
 
           <form className="flex flex-grow flex-col relative gap-3 ">
