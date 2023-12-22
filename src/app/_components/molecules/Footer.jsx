@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 import { AiFillInstagram } from "react-icons/ai";
 import { FaXTwitter, FaFacebookF } from "react-icons/fa6";
@@ -16,14 +17,47 @@ const footer = () => {
   const links = [
     { text: "Beranda", href: "/" },
     { text: "Sejarah", href: "/sejarah" },
-    { text: "Galeri", href: "/" },
-    { text: "Spot menarik", href: "" },
+    { text: "Galeri", href: "/galeri" },
+    { text: "Spot menarik", href: "/spot" },
     { text: "Informasi tempat", href: "/infotempat" },
   ];
 
+  //State untuk menyimpan inputan email dan pesan
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [emailError, setEmailError] = useState(false);
+
+  //Fungsi untuk menyimpan inputan email
+  const handleEmailChange = (event) => {
+    //menyimpan inputan email
+    const inputEmail = event.target.value;
+    setEmail(inputEmail);
+
+    //validasi email menggunakan regex
+    const emailRegex =
+      /^[a-zA-Z0-9_+&*-]+(?:\.[a-zA-Z0-9_+&*-]+)*@(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,7}$/;
+    setEmailError(emailRegex.test(inputEmail) ? "" : "Email tidak valid");
+  };
+
+  //Fungsi untuk menyimpan inputan pesan
+  const handleMessageChange = (event) => {
+    setMessage(event.target.value);
+  };
+
+  //Fungsi untuk mengirimkan email
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    if (emailError) {
+      alert(emailError);
+      return;
+    }
+    setEmail("");
+    setMessage("");
+  };
+
   return (
     <>
-      <section className="relative w-screen px-7 py-20 flex-col flex mx-auto lg:items-center lg:px-20 ">
+      <section className="relative w-screen px-7 py-20 flex-col flex mx-auto  lg:items-center lg:px-20 ">
         <section
           className="absolute top-0 h-full w-screen left-0 -z-10"
           style={{
@@ -31,7 +65,7 @@ const footer = () => {
               "linear-gradient(0deg, #FFC9CA -11%, rgba(18, 16, 16, 0.00) 80%)",
           }}
         ></section>
-        <section className="flex flex-wrap gap-10 md:gap-16 lg:justify-evenly min-[1300px]:flex-nowrap  ">
+        <section className="flex flex-wrap gap-10 md:gap-20 lg:justify-evenly min-[1300px]:flex-nowrap  ">
           <Image
             src="./icons/fort_footer.svg"
             width={220}
@@ -118,6 +152,7 @@ const footer = () => {
                 </section>
               </section>
             </section>
+            <p className="invisible min-[1200px]:visible border-l border-white absolute top-0 h-full right-[23%]"></p>
           </section>
 
           <form className="flex flex-grow flex-col relative gap-3 ">
@@ -128,13 +163,24 @@ const footer = () => {
               {/* Email Input */}
               <input
                 type="email"
-                for="email"
+                id="email"
+                htmlFor="email"
+                value={email}
+                onChange={handleEmailChange}
                 placeholder="nama@gmail.com"
-                className={`rounded-lg border w-full p-3 h-8 focus:outline-none text-text-s focus:border-secondary-teal `}
+                className={`rounded-lg border w-full p-3 h-8 focus:outline-none text-text-s focus:border-secondary-teal ${
+                  emailError ? "border-red-500" : ""
+                } `}
               />
+              {/* Email Error Message */}
+              {emailError && (
+                <p className="text-red-500 text-[12px]">{emailError}</p>
+              )}
 
               {/* Message Textarea */}
               <textarea
+                value={message}
+                onChange={handleMessageChange}
                 className={`rounded-lg w-full h-28 p-3 text-text-s border resize-none focus:outline-none focus:border-secondary-teal `}
                 placeholder="Pesan..."
               ></textarea>
@@ -143,6 +189,7 @@ const footer = () => {
               <Button
                 type="submit"
                 width="true"
+                onClick={handleSubmit}
                 className=" bg-primary-maroon text-text-s self-end  
                 "
               >
