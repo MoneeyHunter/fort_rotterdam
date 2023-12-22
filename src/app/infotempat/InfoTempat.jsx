@@ -1,5 +1,5 @@
 "use client";
-import BoxInformasi from "./molecules/BoxInfomasi";
+import BoxInformasi from "./BoxInfomasi";
 import Link from "next/link";
 import Image from "next/image";
 import Footer from "../_components/molecules/Footer";
@@ -68,7 +68,7 @@ const InfoTempat = () => {
         >
           <section
             data-aos="fade-up"
-            data-aos-duration="5000"
+            data-aos-duration="4000"
             className="relative flex flex-col-reverse gap-10 md:flex md:flex-row justify-between md:px-20"
           >
             <section className=" w-full ">
@@ -131,7 +131,7 @@ const InfoTempat = () => {
             className="flex flex-col-reverse md:flex md:flex-row justify-between gap-10 md:px-20 w-full "
             id="tiketmasuk"
             data-aos="fade-up"
-            data-aos-duration="5000"
+            data-aos-duration="4000"
           >
             <section className="w-full ">
               <div className="flex gap-3">

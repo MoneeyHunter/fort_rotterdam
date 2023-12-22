@@ -20,17 +20,11 @@ const data = [
     title: "Galeri Seni",
   },
   {
-    imgPath: "/images/meriam1.webp",
+    imgPath: "/images/koleksi2.webp",
     imgAlt: "Meriam VOC",
     title: "Meriam VOC",
   },
 ];
 export default data;
-
-
-
-
-
-
 
 //Credit : github.com/Sylent-Sys
