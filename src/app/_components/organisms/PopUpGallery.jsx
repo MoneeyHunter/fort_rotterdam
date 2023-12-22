@@ -25,7 +25,7 @@ const PopUpGallery = ({ src, title, desc, onClose }) => {
         onClick={handleClose}
       />
       <section className="w-screen h-screen flex flex-col justify-center items-center">
-        <section className="flex flex-col lg:flex-row justify-center items-center px-16 lg:px-28 gap-8">
+        <section className="flex flex-col lg:flex-row justify-center items-center px-5 lg:px-28 gap-8">
           <section className=" lg:h-[480px] lg:w-[430px] h-[250px] w-[200px] flex-shrink-0 relative transition-transform transform">
             <Image
               fill
