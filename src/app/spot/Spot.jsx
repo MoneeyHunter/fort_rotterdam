@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import dataSpot from "./mock";
+import Footer from "../_components/molecules/Footer"
 
 const Spot = () => {
   const [indexBigSpot, setIndexBigSpot] = useState(0);
@@ -38,18 +39,18 @@ const Spot = () => {
             w-full h-64
             lg:h-96"
         ></div>
-        <div data-aos="fade-up">
+        <div data-aos="fade-up" data-aos-duration="4000">
           <p
             className="relative text-white text-center font-bold text-2xl 
               pt-24
-              lg:pt-44 lg:text-5xl uppercase"
+              lg:pt-44 lg:text-heading-xl uppercase"
           >
             spot menarik fort rotterdam
           </p>
           <p
             className="relative text-center text-zinc-100 tracking-widest
             text-[9px]
-            lg:text-[15px]"
+            lg:text-base"
           >
             "Benteng bukan hanya sebuah struktur batu, melainkan saksi
             <br />
@@ -59,7 +60,7 @@ const Spot = () => {
       </section>
       <section className="relative md:flex rounded-full">
         <section className="px-8 ">
-          <section className="pt-40" id="gambarUtama" data-aos="fade-right">
+          <section className="pt-40" id="gambarUtama" data-aos="fade-right" data-aos-duration="4000">
             <section className="relative group">
               <div className="relative" >
                 <Image
@@ -88,7 +89,7 @@ const Spot = () => {
                   setIndexBigSpot(i);
                 }}
                 key={i}
-                data-aos="zoom-in"
+                data-aos="zoom-in " data-aos-duration="4000"
               >
                 <section>
                   <div className="relative group">
@@ -114,6 +115,7 @@ const Spot = () => {
         </section>
       </section>
       <section className="w-full h-[200px] bg-white"></section>
+      <Footer/>
     </main>
   );
 };
