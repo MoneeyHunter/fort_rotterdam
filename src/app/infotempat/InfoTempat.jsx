@@ -63,7 +63,7 @@ const InfoTempat = () => {
           <section
             data-aos="fade-up"
             data-aos-duration="5000"
-            className="relative flex flex-col-reverse gap-10 md:flex md:flex-row justify-between md:px-20 border"
+            className="relative flex flex-col-reverse gap-10 md:flex md:flex-row justify-between md:px-20"
           >
             <section className=" w-full ">
               <div className="flex gap-3">
@@ -122,7 +122,7 @@ const InfoTempat = () => {
           </section>
 
           <section
-            className="flex flex-col-reverse md:flex md:flex-row justify-between gap-10 md:px-20 w-full border"
+            className="flex flex-col-reverse md:flex md:flex-row justify-between gap-10 md:px-20 w-full "
             data-aos="fade-up"
             data-aos-duration="5000"
           >
