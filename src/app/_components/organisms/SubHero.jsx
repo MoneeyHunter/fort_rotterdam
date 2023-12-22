@@ -42,7 +42,7 @@ const SubHero = () => {
                   top-[17%] left-[25%]
                   lg:left-[27%] lg:top-[17%]"
                 >
-                  Sejarah Yang Memukau
+                  Sejarah yang Kelam
                 </p>
                 <p
                   className="absolute w-[290px] text-base text-justify
@@ -119,9 +119,8 @@ const SubHero = () => {
                   className="absolute w-[290px] text-base text-justify
               top-[40%] left-[20%]"
                 >
-                  Fort Rotterdam menawarkan pengalaman wisata mendidik dan
-                  mengasyikkan yang mampu membuat pengunjung merasakan masa lalu
-                  secara langsung.
+                  Fort Rotterdam menawarkan pengalaman wisata yang mendidik dan
+                  mampu membuat pengunjung merasakan masa lalu secara langsung.
                 </p>
               </section>
             </Box>
