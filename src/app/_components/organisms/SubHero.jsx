@@ -13,13 +13,13 @@ const SubHero = () => {
         <section
           className="text-primary-maroon text-center font-bold text-heading-l pt-14  
           lg:text-heading-xl
-          md:text-[45px]"
+          md:text-5xl"
         >
           <h1 className="uppercase">informasi umum</h1>
         </section>
 
         <section className="flex gap-5 justify-center flex-wrap items-center pt-16 sm:px-6 lg:px-0 md:px-0">
-          <div data-aos="fade-up">
+          <div data-aos="fade-up" data-aos-duration="4000">
             <Box>
               <div
                 className="absolute 
@@ -55,7 +55,7 @@ const SubHero = () => {
             </Box>
           </div>
 
-          <div data-aos="fade-down">
+          <div data-aos="fade-up" data-aos-duration="4000">
             <Box>
               <div
                 className="absolute 
@@ -90,7 +90,7 @@ const SubHero = () => {
             </Box>
           </div>
 
-          <div data-aos="fade-up">
+          <div data-aos="fade-up" data-aos-duration="4000">
             <Box>
               <div
                 className="absolute 
@@ -128,9 +128,9 @@ const SubHero = () => {
       </section>
 
       <section className="relative w-full h-[250px] md:h-[400px] lg:h-[500px] bg-primary-maroon font-bold text-white flex justify-center items-center uppecercase">
-        <section data-aos="fade-up" className="flex">
+        <section data-aos="fade-up" data-aos-duration="4000" className="flex">
           <p className="text-6xl translate-x-0  lg:text-7xl">“</p>
-          <p className="lg:text-heading-l pt-8 md:text-heading-m text-l  uppercase -translate-y-2">
+          <p className="lg:text-heading-xl pt-8 md:text-heading-m text-l  uppercase -translate-y-2">
             sejarah mengungkapkan masa lalu,
             <br />
             memberitahu masa kini,
