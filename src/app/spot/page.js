@@ -12,7 +12,7 @@ const SpotPage = () => {
     AOS.refresh();
   }, []);
   return (
-    <main>
+    <main className="overflow-hidden">
       <Spot />
       <Navbar />
     </main>

@@ -24,7 +24,7 @@ const Galeri = () => {
   };
 
   return (
-    <main className="">
+    <main className="overflow-hidden">
       <Navbar showBackground={false} />
       <section className="flex flex-col lg:px-[80px] px-[60px] py-32 gap-10">
         {selectedGallery && (
