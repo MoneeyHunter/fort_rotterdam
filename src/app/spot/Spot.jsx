@@ -52,14 +52,14 @@ const Spot = () => {
             text-[9px]
             lg:text-base"
           >
-            "Benteng bukan hanya sebuah struktur batu, melainkan saksi
+            Benteng bukan hanya sebuah struktur batu, melainkan saksi
             <br />
-            bisu dari zaman yang telah berlalu."
+            bisu dari zaman yang telah berlalu.
           </p>
         </div>
       </section>
-      <section className="relative md:flex rounded-full">
-        <section className="px-8 ">
+      <section className="relative md:flex rounded-full justify-center items-center">
+        <section className="px-8">
           <section className="pt-40" id="gambarUtama" data-aos="fade-right" data-aos-duration="4000">
             <section className="relative group">
               <div className="relative">

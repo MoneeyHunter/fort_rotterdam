@@ -43,27 +43,27 @@ const Artikel = () => {
             text-[9px]
             lg:text-base"
           >
-            "Benteng bukan hanya sebuah struktur batu, melainkan saksi
+            Benteng bukan hanya sebuah struktur batu, melainkan saksi
             <br />
-            bisu dari zaman yang telah berlalu."
+            bisu dari zaman yang telah berlalu.
           </p>
         </div>
       </section>
 
       {/* Artikel */}
       <section className="flex relative items-center justify-center">
-        <section className="lg:py-44 lg:px-24 py-44 px-0 max-lg:px-8 text-justify tracking-widest">
+        <section className="lg:py-44 lg:px-16 py-44 px-0 max-lg:px-8 text-justify tracking-widest">
           {ReactHtmlParser(ArtikelSejarah)}
         </section>
         <section className="max-lg:hidden">
-          <section className="pr-5 relative">
+          <section className="relative pt-24">
             <BoxImage className="flex absolute left-60 -z-10">
-              <div className="absolute left-16 top-16" data-aos="fade-up" data-aos-duration="4000">
+              <div className="absolute px-7 top-16" data-aos="fade-up" data-aos-duration="4000">
                 <Image
                   src="/images/artikelEmpatt.webp"
-                  width={500}
+                  width={350}
                   height={100}
-                  className="rounded-lg shadow-lg"
+                  className="rounded-lg "
                   style={{ objectFit: "cover", objectPosition: "center" }}
                   alt="foto1"
                 />
@@ -71,12 +71,12 @@ const Artikel = () => {
             </BoxImage>
 
             <BoxImage className="-z-10">
-              <div className="absolute left-16 top-16" data-aos="fade-up" data-aos-duration="4000">
+              <div className="absolute px-7 top-16" data-aos="fade-up" data-aos-duration="4000">
                 <Image
                   src="/images/artikelDuaa.webp"
-                  width={500}
+                  width={350}
                   height={100}
-                  className="rounded-lg shadow-lg"
+                  className="rounded-lg "
                   style={{ objectFit: "cover", objectPosition: "center" }}
                   alt="fotoDua"
                 />
@@ -84,12 +84,12 @@ const Artikel = () => {
             </BoxImage>
 
             <BoxImage className="-z-10">
-              <div className="absolute left-16 top-16" data-aos="fade-up" data-aos-duration="4000">
+              <div className="absolute px-7 top-16" data-aos="fade-up" data-aos-duration="4000">
                 <Image
                   src="/images/artikelTigaa.webp"
-                  width={500}
+                  width={350}
                   height={100}
-                  className="rounded-lg shadow-lg"
+                  className="rounded-lg "
                   style={{ objectFit: "cover", objectPosition: "center" }}
                   alt="foto3"
                 />
@@ -97,12 +97,12 @@ const Artikel = () => {
             </BoxImage>
 
             <BoxImage className="-z-10">
-              <div className="absolute left-16 top-16" data-aos="fade-up" data-aos-duration="4000">
+              <div className="absolute px-7 top-16" data-aos="fade-up" data-aos-duration="4000">
                 <Image
                   src="/images/artikelSatuu.webp"
-                  width={500}
+                  width={350}
                   height={100}
-                  className="rounded-lg shadow-lg"
+                  className="rounded-lg "
                   style={{ objectFit: "cover", objectPosition: "center" }}
                   alt="foto4"
                 />
