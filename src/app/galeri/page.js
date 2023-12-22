@@ -83,7 +83,7 @@ const data = [
   {
     src: "/images/koleksi2.webp",
     title: "MERIAM PENINGGALAN VOC",
-    desc: "Salah satu peninggalan yang terdapat di Benteng Rotterdam berupa meriam. Meriam ini merupakan peninggalan dari VOC yang digunakan untuk pertahanan Benteng Rotterdam. Hingga sekarang, meriam ini masih terawat dengan baik dan menjadi salah satu koleksi yang menarik untuk dilihat. Meriam ini diletakkan di depan gedung P yang bangunannya berlantai dua dengan luas 544m^2 dan digunakan sebagai gereja pada masa kolonial Belanda. Namun, sekarang digunakan sebagai aula pada bagian atas dan ruang pameran di bagian bawah.",
+    desc: "Salah satu peninggalan yang terdapat di Benteng Rotterdam berupa meriam. Meriam ini merupakan peninggalan dari VOC yang digunakan untuk pertahanan Benteng Rotterdam. Hingga sekarang, meriam ini masih terawat dengan baik dan menjadi salah satu koleksi yang menarik untuk dilihat. Meriam ini diletakkan di depan gedung P yang bangunannya berlantai dua dengan luas 544m^2 dan digunakan sebagai gereja pada masa kolonial Belanda. ",
   },
   {
     src: "/images/koleksi3.webp",
@@ -93,12 +93,12 @@ const data = [
   {
     src: "/images/koleksi4.webp",
     title: "Koleksi Miniatur Bagang Perahu",
-    desc: "Bagang adalah salah satu sarana yang dipergunakan untuk menangkap ikan di sungai, danau atau laut. Bagang ini dapat berpindah-pindah. Tradisi nelayan Bugis-Makassar, sebelum melaut terlebih dahulu melaksanakan upacara Ma'cera Tasi yang diadakan untuk menghormati dan memohon perlindungan dari roh-roh laut serta untuk memohon keselamatan para pelaut dalam menjalankan aktivitas laut mereka. Upacara ini melibatkan prosesi yang melibatkan masyarakat setempat, terutama para nelayan dan keluarga mereka.",
+    desc: "Bagang adalah salah satu sarana yang dipergunakan untuk menangkap ikan di sungai, danau atau laut. Bagang ini dapat berpindah-pindah. Tradisi nelayan Bugis-Makassar, sebelum melaut terlebih dahulu melaksanakan upacara Ma'cera Tasi yang diadakan untuk menghormati dan memohon perlindungan dari roh-roh laut serta untuk memohon keselamatan para pelaut dalam menjalankan aktivitas laut mereka.",
   },
   {
     src: "/images/koleksi5.webp",
     title: "RUANG BUDAYA PERKAMPUNGAN",
-    desc: "Ruangan ini menyimpan banyak koleksi seperti Tempat Ari Perak dan Tanah Liat, Pakkeri, Baju Bodo, Wadah Erong, Lamming Tudange, Rumah Adat Tradisional Suku Toraja, dan masih banyak lagi. Di sebuah perkampungan tradisional di Sulawesi Selatan, struktur rumah panggung dengan atap melengkung mendominasi pemandangan. Arsitektur khas Bugis dan Makassar menciptakan keindahan artistik dengan atap 'limas' atau 'tutup bale'. Dalam pakaian adat, 'Baju Bodo' bagi perempuan Bugis menjadi simbol keanggunan dengan hiasan brokat dan warna-warni yang menarik.",
+    desc: "Ruangan ini menyimpan banyak koleksi seperti Tempat Ari Perak dan Tanah Liat, Pakkeri, Baju Bodo, Wadah Erong, Lamming Tudange, Rumah Adat Tradisional Suku Toraja, dan masih banyak lagi. Di sebuah perkampungan tradisional di Sulawesi Selatan, struktur rumah panggung dengan atap melengkung mendominasi pemandangan. Arsitektur khas Bugis dan Makassar menciptakan keindahan artistik dengan atap 'limas' atau 'tutup bale'.",
   },
   {
     src: "/images/koleksi6.webp",
@@ -113,22 +113,22 @@ const data = [
   {
     src: "/images/koleksi8.webp",
     title: "Gedung B",
-    desc: "Bangunan ini menunjukkan ciri arsitektur khas gaya Belanda dapat dilihat dari bentuk bangunan yang memanjang dan bertingkat. Bangunan ini merupakan hasil rekonstruksi oleh SPSP Sulselra yang sekarang berubah nama menjadi BPCB Sulawesi Selatan karena keadaannya yang sangat hancur akibat perang. Bangunan ini tidak memiliki cerobong asap semu seperti bangunan lainnya dalam benteng. Pada bagian lantai II terdapat serambi seperti arsitektur lokal Bugis-Makassar. Luas bangunan adalah 104 m 2 , menghadap ke timur yang membujur dari utara ke selatan.",
+    desc: "Bangunan ini menunjukkan ciri arsitektur khas gaya Belanda dapat dilihat dari bentuk bangunan yang memanjang dan bertingkat. Bangunan ini merupakan hasil rekonstruksi oleh SPSP Sulselra yang sekarang berubah nama menjadi BPCB Sulawesi Selatan karena keadaannya yang sangat hancur akibat perang. Bangunan ini tidak memiliki cerobong asap semu seperti bangunan lainnya dalam benteng. Pada bagian lantai II terdapat serambi seperti arsitektur lokal Bugis-Makassar. ",
   },
   {
     src: "/images/koleksi9.webp",
     title: "Gedung C",
-    desc: "Bangunan berlantai tiga ini terletak di Bastion Buton dengan luas 495 m 2 menghadap ke selatan. Dahulu, bangunan ini dipergunakan untuk menerima tamu dari Buton. Sesudah direhabitasi tahun 1976, bangunan ini kemudian digunakan sebagai pusat latihan tari Indonesia (Konservatory Tari Indonesia) di Ujungpandang, setelah itu digunakan sebagai pusat kesenian Makassar atau lebih dikenal sebagai bangunan DKM (Dewan Kesenian Makassar). Pada bagian atas bangunan terdapat kaca mati yang berbentuk tapal kuda masing-masing satu buah pada bagian barat dan timur.",
+    desc: "Bangunan berlantai tiga ini terletak di Bastion Buton dengan luas 495 m 2 menghadap ke selatan. Dahulu, bangunan ini dipergunakan untuk menerima tamu dari Buton. Sesudah direhabitasi tahun 1976, bangunan ini kemudian digunakan sebagai pusat latihan tari Indonesia (Konservatory Tari Indonesia) di Ujungpandang, setelah itu digunakan sebagai pusat kesenian Makassar atau lebih dikenal sebagai bangunan DKM (Dewan Kesenian Makassar). ",
   },
   {
     src: "/images/koleksi10.webp",
     title: "Gedung D",
-    desc: "Bangunan ini merupakan bangunan tertua diantara bangunan di dalam benteng. Didirikan tahun 1686, sebagai tempat tinggal Cornelius Speelman, menghadap ke selatan membujur dari barat ke timur dengan luas bangunan 189,65 m 2 . Bangunan ini terdiri dari tiga lantai, jumlah ruangan lantai dasar adalah 10 buah, lantai II sebanyak lima buah dan lantai III hanya satu ruangan. Pada lantai dasar terdapat selasar pada bagian yang ditopang dengan pilar segi empat dengan tinggi 3,0 meter sebanyak tujuh buah. Setiap jendela dan pintu dasar bagian barat dan timur diberi Over Steak yang konsolnya terbuat dari kayu.",
+    desc: "Bangunan ini merupakan bangunan tertua diantara bangunan di dalam benteng. Didirikan tahun 1686, sebagai tempat tinggal Cornelius Speelman, menghadap ke selatan membujur dari barat ke timur dengan luas bangunan 189,65 m 2 . Bangunan ini terdiri dari tiga lantai, jumlah ruangan lantai dasar adalah 10 buah, lantai II sebanyak lima buah dan lantai III hanya satu ruangan. Pada lantai dasar terdapat selasar pada bagian yang ditopang dengan pilar segi empat dengan tinggi 3,0 meter sebanyak tujuh buah.",
   },
   {
     src: "/images/koleksi11.webp",
     title: "Gedung E",
-    desc: "Bangunan ini terdiri dari dua lantai, dimana lantai dasar bagian depan mempunyai selasar yang ditopang oleh pilar segi empat dengan tinggi tiga meter sebanyak 12 buah yang tersusun oleh batu bata, bangunan kiri dan kanan masing-masing enam buah pilar. Bangunan ini terdiri dari dua bangunan yang dipisahkan oleh dinding dan tidak mempunyai pintu penghubung. Setiap bangunan mempunyai taman di bagian belakang. Jendela-jendela yang terdapat pada sisi-sisi kiri dan kanan bangunan lantai I, II maupun jendela di bawah konstruksi atap terdapat jendela segi empat panil ganda ukuran 0,9 x 0,7 meter masing-masing satu buah.",
+    desc: "Bangunan ini terdiri dari dua lantai, dimana lantai dasar bagian depan mempunyai selasar yang ditopang oleh pilar segi empat dengan tinggi tiga meter sebanyak 12 buah yang tersusun oleh batu bata, bangunan kiri dan kanan masing-masing enam buah pilar. Bangunan ini terdiri dari dua bangunan yang dipisahkan oleh dinding dan tidak mempunyai pintu penghubung. Setiap bangunan mempunyai taman di bagian belakang. ",
   },
   {
     src: "/images/koleksi12.webp",
