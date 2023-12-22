@@ -34,7 +34,7 @@ const LihatGaleri = () => {
 
           <div className="absolute top-44 right-[20%] md:right-[23%] lg:right-[22%]  ">
             <Image
-              src={"/images/patungkuda.webp"}
+              src={"/images/patung_kuda.webp"}
               width={200}
               height={200}
               alt="Patung Kuda"

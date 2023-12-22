@@ -3,11 +3,12 @@
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
-import BoxImage from "src/app/_components/molecules/BoxImage";
 import { useEffect } from "react";
-import Footer from "src/app/_components/molecules/Footer"
-
 import ReactHtmlParser from "react-html-parser";
+
+import BoxImage from "src/app/_components/molecules/BoxImage";
+import Footer from "src/app/_components/molecules/Footer";
+
 import ArtikelSejarah from "./mocks/konten";
 const Artikel = () => {
   return (
@@ -32,7 +33,7 @@ const Artikel = () => {
           <p
             className="relative text-white text-center font-bold text-2xl 
               pt-24
-              lg:pt-44 lg:text-5xl"
+              lg:pt-44 lg:text-heading-xl"
           >
             SEJARAH FORT ROTTERDAM
           </p>
@@ -57,7 +58,7 @@ const Artikel = () => {
         <section className="max-lg:hidden">
           <section className="pr-5 relative">
             <BoxImage className="flex absolute left-60 -z-10">
-              <div className="absolute left-16 top-16" data-aos="fade-up">
+              <div className="absolute left-16 top-16" data-aos="fade-up" data-aos-duration="4000">
                 <Image
                   src="/images/artikelEmpatt.webp"
                   width={500}
@@ -68,8 +69,9 @@ const Artikel = () => {
                 />
               </div>
             </BoxImage>
+
             <BoxImage className="-z-10">
-              <div className="absolute left-16 top-16" data-aos="fade-up">
+              <div className="absolute left-16 top-16" data-aos="fade-up" data-aos-duration="4000">
                 <Image
                   src="/images/artikelDuaa.webp"
                   width={500}
@@ -80,8 +82,9 @@ const Artikel = () => {
                 />
               </div>
             </BoxImage>
+
             <BoxImage className="-z-10">
-              <div className="absolute left-16 top-16" data-aos="fade-up">
+              <div className="absolute left-16 top-16" data-aos="fade-up" data-aos-duration="4000">
                 <Image
                   src="/images/artikelTigaa.webp"
                   width={500}
@@ -92,8 +95,9 @@ const Artikel = () => {
                 />
               </div>
             </BoxImage>
+
             <BoxImage className="-z-10">
-              <div className="absolute left-16 top-16" data-aos="fade-up">
+              <div className="absolute left-16 top-16" data-aos="fade-up" data-aos-duration="4000">
                 <Image
                   src="/images/artikelSatuu.webp"
                   width={500}
