@@ -68,8 +68,8 @@ const LihatGaleri = () => {
               <Circle className="w-20 h-20 p-5 bg-primary-maroon scale-[.70] md:scale-95 lg:scale-100">
                 <Image src="./icons/iconGaleri.svg" width={30} height={30} />
               </Circle>
-              <Link href={"#"}>
-                <p className="text-heading-s lg:text-heading-m font-semibold ">
+              <Link href={"/galeri"}>
+                <p className="text-heading-s lg:text-heading-m font-semibold hover:text-primary-maroon ">
                   Lihat Galeri
                 </p>
               </Link>

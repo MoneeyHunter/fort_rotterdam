@@ -30,16 +30,16 @@ const NavbarItems = () => {
   const links = [
     { text: "Beranda", href: "/" },
     { text: "Sejarah", href: "/sejarah" },
-    { text: "Galeri", href: "/" },
+    { text: "Galeri", href: "/galeri" },
     { text: "Spot Menarik", href: "/spot" },
     {
       text: "Informasi Tempat",
-      href: "/",
+      href: "/infotempat",
       sublinks: [
-        { text: "Tips wisata", href: "/" },
-        { text: "Jam buka", href: "/" },
-        { text: "Tiket masuk", href: "/" },
-        { text: "Lokasi", href: "/" },
+        { text: "Tips wisata", href: "/infotempat#tipswisata" },
+        { text: "Jam buka", href: "/infotempat#waktukunjungan" },
+        { text: "Tiket masuk", href: "/infotempat#tiketmasuk" },
+        { text: "Lokasi", href: "/infotempat#lokasi" },
       ],
     },
   ];

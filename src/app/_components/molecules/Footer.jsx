@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 import { AiFillInstagram } from "react-icons/ai";
 import { FaXTwitter, FaFacebookF } from "react-icons/fa6";
@@ -16,10 +17,43 @@ const footer = () => {
   const links = [
     { text: "Beranda", href: "/" },
     { text: "Sejarah", href: "/sejarah" },
-    { text: "Galeri", href: "/" },
-    { text: "Spot menarik", href: "" },
+    { text: "Galeri", href: "/galeri" },
+    { text: "Spot menarik", href: "/spot" },
     { text: "Informasi tempat", href: "/infotempat" },
   ];
+
+  //State untuk menyimpan inputan email dan pesan
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [emailError, setEmailError] = useState(false);
+
+  //Fungsi untuk menyimpan inputan email
+  const handleEmailChange = (event) => {
+    //menyimpan inputan email
+    const inputEmail = event.target.value;
+    setEmail(inputEmail);
+
+    //validasi email menggunakan regex
+    const emailRegex =
+      /^[a-zA-Z0-9_+&*-]+(?:\.[a-zA-Z0-9_+&*-]+)*@(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,7}$/;
+    setEmailError(emailRegex.test(inputEmail) ? "" : "Email tidak valid");
+  };
+
+  //Fungsi untuk menyimpan inputan pesan
+  const handleMessageChange = (event) => {
+    setMessage(event.target.value);
+  };
+
+  //Fungsi untuk mengirimkan email
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    if (emailError) {
+      alert(emailError);
+      return;
+    }
+    setEmail("");
+    setMessage("");
+  };
 
   return (
     <>
@@ -129,13 +163,24 @@ const footer = () => {
               {/* Email Input */}
               <input
                 type="email"
+                id="email"
                 for="email"
+                value={email}
+                onChange={handleEmailChange}
                 placeholder="nama@gmail.com"
-                className={`rounded-lg border w-full p-3 h-8 focus:outline-none text-text-s focus:border-secondary-teal `}
+                className={`rounded-lg border w-full p-3 h-8 focus:outline-none text-text-s focus:border-secondary-teal ${
+                  emailError ? "border-red-500" : ""
+                } `}
               />
+              {/* Email Error Message */}
+              {emailError && (
+                <p className="text-red-500 text-[12px]">{emailError}</p>
+              )}
 
               {/* Message Textarea */}
               <textarea
+                value={message}
+                onChange={handleMessageChange}
                 className={`rounded-lg w-full h-28 p-3 text-text-s border resize-none focus:outline-none focus:border-secondary-teal `}
                 placeholder="Pesan..."
               ></textarea>
@@ -144,6 +189,7 @@ const footer = () => {
               <Button
                 type="submit"
                 width="true"
+                onClick={handleSubmit}
                 className=" bg-primary-maroon text-text-s self-end  
                 "
               >
