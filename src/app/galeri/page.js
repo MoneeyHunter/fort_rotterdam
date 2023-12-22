@@ -43,7 +43,7 @@ const Galeri = () => {
             Mari nikmati keindahan dan sejarah yang tersembunyi di setiap sudut
             Benteng Rotterdam melalui galeri kami. Setiap gambar menceritakan
             kisah panjang tempat ini, dari fondasi yang kokoh hingga pemandangan
-            indah yang dapat dinikmati dari temboknya.
+            indah yang dapat dinikmati dari temboknya
           </p>
         </section>
         <section className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10">
