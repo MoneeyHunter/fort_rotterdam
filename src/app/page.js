@@ -15,7 +15,7 @@ export default function Home() {
     AOS.refresh();
   }, []);
   return (
-    <main>
+    <main className=" overflow-hidden">
       <ImageSlider />
       <section className="absolute z-20 top-0 left-0 w-full flex flex-col justify-between">
         <Navbar />
