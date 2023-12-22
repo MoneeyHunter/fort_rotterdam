@@ -17,7 +17,11 @@ const InfoTempat = () => {
             objectFit="cover"
             objectPosition="center"
           />
-          <div className="relative w-full lg:w-3/4 items-center justify-center">
+          <div
+            className="relative w-full lg:w-3/4 items-center justify-center"
+            data-aos="fade-up"
+            data-aos-duration="4000"
+          >
             <p className=" text-white text-center uppercase font-bold text-heading-m md:text-heading-l lg:text-heading-xl py-4 md:py-2 ">
               Informasi Tentang Fort Rotterdam
             </p>
@@ -56,7 +60,11 @@ const InfoTempat = () => {
         </section>
 
         <section className="flex flex-col gap-32 py-16 px-6 md:px-8">
-          <section className="flex flex-col-reverse gap-10 md:flex md:flex-row justify-between md:px-20">
+          <section
+            data-aos="fade-up"
+            data-aos-duration="5000"
+            className="flex flex-col-reverse gap-10 md:flex md:flex-row justify-between md:px-20"
+          >
             <section className=" w-full ">
               <div className="flex gap-3">
                 <Image
@@ -113,7 +121,11 @@ const InfoTempat = () => {
             </div>
           </section>
 
-          <section className="flex flex-col-reverse md:flex md:flex-row justify-between gap-10 md:px-20 w-full">
+          <section
+            className="flex flex-col-reverse md:flex md:flex-row justify-between gap-10 md:px-20 w-full"
+            data-aos="fade-up"
+            data-aos-duration="5000"
+          >
             <section className="w-full ">
               <div className="flex gap-3">
                 <Image
@@ -170,7 +182,11 @@ const InfoTempat = () => {
           </section>
         </section>
 
-        <section className="py-16 px-8 md:px-24 gap-5 flex flex-col justify-start">
+        <section
+          className="py-16  px-8 md:px-24 gap-5 flex flex-col justify-start"
+          data-aos="fade-up"
+          data-aos-duration="4000"
+        >
           <div className="flex flex-col gap-5 ">
             <p className="font-bold text-primary-maroon text-heading-m uppercase md:text-heading-l ">
               Lokasi Fort Rotterdam
