@@ -27,7 +27,7 @@ const GalleryCard = ({ src, title, onClick }) => {
             }}
           >
             <div className="flex justify-between">
-              <h1 className="text-heading-s font-bold text-white uppercase">
+              <h1 className="text-text-m lg:text-heading-s md:text-text-l font-bold text-white uppercase">
                 {title}
               </h1>
               <MdOutlineLaunch className="text-white w-10 h-6" />

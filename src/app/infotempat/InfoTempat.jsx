@@ -31,6 +31,7 @@ const InfoTempat = () => {
             </p>
           </div>
         </section>
+
         <section className="px-7 md:px-14">
           {/* Section Tips Wisata */}
           <section
@@ -63,8 +64,8 @@ const InfoTempat = () => {
 
           <section className="flex flex-col gap-32 py-16 " id="waktukunjungan">
             <section
-              // data-aos="fade-up"
-              // data-aos-duration="4000"
+              data-aos="fade-up"
+              data-aos-duration="4000"
               className="relative flex flex-col-reverse gap-10 md:flex md:flex-row justify-between px-7 md:px-14"
             >
               <section className=" w-full">
@@ -126,10 +127,10 @@ const InfoTempat = () => {
             </section>
 
             <section
-              className="flex flex-col-reverse md:flex md:flex-row justify-between gap-10 px-7 md:px-14 w-full "
+              className="flex flex-col-reverse md:flex md:flex-row justify-between gap-10 md:px-20 w-full "
               id="tiketmasuk"
-              // data-aos="fade-up"
-              // data-aos-duration="4000"
+              data-aos="fade-up"
+              data-aos-duration="4000"
             >
               <section className="w-full ">
                 <div className="flex gap-3">
@@ -188,33 +189,32 @@ const InfoTempat = () => {
               />
             </section>
           </section>
+        </section>
 
-          <section
-            className="py-16  px-7 md:px-14 gap-5 flex flex-col justify-start"
-            id="lokasi"
-            data-aos="fade-up"
-            data-aos-duration="4000"
-          >
-            <div className="flex flex-col gap-5 ">
-              <p className="font-bold text-primary-maroon text-heading-m uppercase md:text-heading-l ">
-                Lokasi Fort Rotterdam
-              </p>
-              <p>
-                Benteng Fort Rotterdam berlokasi di Jl. Ujung Pandang, Bulo
-                Gading, Kec. Ujung Pandang, Kota Makassar, Sulawesi Selatan
-                90171
-              </p>
-            </div>
-            <div className="flex flex-grow">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d496.7265067724445!2d119.40528193078129!3d-5.133947051937677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbf02b011ce37ef%3A0x28ed3928c1b6cf23!2sFort%20Rotterdam!5e0!3m2!1sen!2sid!4v1703168152416!5m2!1sen!2sid"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                className="rounded-[25px] w-full h-[350px]"
-              ></iframe>
-            </div>
-          </section>
+        <section
+          className="py-16  px-7 md:px-14 gap-5 flex flex-col justify-start"
+          id="lokasi"
+          data-aos="fade-up"
+          data-aos-duration="4000"
+        >
+          <div className="flex flex-col gap-5 ">
+            <p className="font-bold text-primary-maroon text-heading-m uppercase md:text-heading-l ">
+              Lokasi Fort Rotterdam
+            </p>
+            <p className="text-text-m">
+              Jl. Ujung Pandang, Bulo Gading, Kec. Ujung Pandang, Kota Makassar,
+              Sulawesi Selatan 90171
+            </p>
+          </div>
+          <div className="flex flex-grow">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d496.7265067724445!2d119.40528193078129!3d-5.133947051937677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbf02b011ce37ef%3A0x28ed3928c1b6cf23!2sFort%20Rotterdam!5e0!3m2!1sen!2sid!4v1703168152416!5m2!1sen!2sid"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              className="rounded-[25px] w-full h-[350px]"
+            ></iframe>
+          </div>
         </section>
         <Footer />
       </main>
