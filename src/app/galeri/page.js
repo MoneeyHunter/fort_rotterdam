@@ -26,7 +26,7 @@ const Galeri = () => {
   return (
     <main className="overflow-hidden">
       <Navbar showBackground={false} />
-      <section className="flex flex-col lg:px-[80px] px-[60px] py-32 gap-10">
+      <section className="flex flex-col md:px-14 px-7 py-32 gap-10">
         {selectedGallery && (
           <PopUpGallery
             src={selectedGallery.src}

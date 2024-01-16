@@ -3,8 +3,7 @@
 import React, { useEffect, useState } from "react";
 import PrimaryCircle from "../atoms/PrimaryCircle";
 
-import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownRounded";
-
+import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 const ImageSlider = () => {
   //State untuk menampilkan Slide
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -73,7 +72,7 @@ const ImageSlider = () => {
       </section>
 
       {/* Teks dan Slide */}
-      <section className="absolute gap-6 flex flex-col xl:flex-row  justify-center items-center top-1/3 sm:top-32 md:top-28 lg:top-36 xl:top-1/3 px-8">
+      <section className="absolute gap-6 flex flex-col xl:flex-row  justify-center items-center top-1/3 sm:top-32 md:top-28 lg:top-36 xl:top-1/3 px-7 md:px-14">
         {/* Teks untuk menampilkan Judul dan Deskripsi */}
         <section className="flex flex-col gap-5 xl:gap-10 ">
           <h1 className=" flex flex-col text-heading-m font-bold text-white lg:text-heading-xl md:text-heading-l ">
@@ -112,18 +111,18 @@ const ImageSlider = () => {
             ))}
           </section>
           {/*Button untuk Menghandle Slide */}
-          <section className="flex flex-col xl:flex-row gap-3">
+          <section className="flex flex-col xl:flex-row gap-3 ">
             <PrimaryCircle
               onClick={handlePrevSlide}
-              className="w-10 h-10 transition duration-500 bg-primary-maroon hover:bg-white "
+              className="w-10 h-10 transition duration-500 bg-primary-maroon hover:bg-white cursor-pointer  "
             >
-              <KeyboardArrowDownRoundedIcon className="text-white hover:text-black rotate-90" />
+              <IoIosArrowBack className="text-white hover:text-black w-10 h-10 p-2 " />
             </PrimaryCircle>
             <PrimaryCircle
               onClick={handleNextSlide}
-              className="w-10 h-10 transition duration-500 bg-primary-maroon hover:bg-white "
+              className="w-10 h-10 transition duration-500 bg-primary-maroon hover:bg-white cursor-pointer"
             >
-              <KeyboardArrowDownRoundedIcon className="text-white hover:text-black -rotate-90" />
+              <IoIosArrowForward className="text-white hover:text-black w-10 h-10 p-2  " />
             </PrimaryCircle>
           </section>
         </section>

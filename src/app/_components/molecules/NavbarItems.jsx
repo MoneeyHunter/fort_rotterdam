@@ -3,9 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
-
-import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownRounded";
-
+import { IoIosArrowDown } from "react-icons/io";
 const NavbarItems = () => {
   //State untuk menampilkan Navbar di Mobile
   const [isOpen, setIsOpen] = useState(false);
@@ -59,7 +57,7 @@ const NavbarItems = () => {
             }`}
           >
             {link.text}
-            <KeyboardArrowDownRoundedIcon
+            <IoIosArrowDown
               className="ml-1 transform transition-transform duration-300 justify-center items-center group-hover:rotate-180 "
               style={{ width: "1.5rem", height: "1.5rem" }}
             />

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
+import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import Image from "next/image";
 import DataReview from "../molecules/DataReview";
 import BoxReview from "../molecules/BoxReview";
@@ -52,7 +52,7 @@ const Review = () => {
               height={180}
               className=" absolute scale-[.60] -left-10 -top-8 md:scale-[100%] md:-left-3 md:top-0"
             />
-            <h3 className="text-white uppercase font-bold text-center  text-heading-m md:text-heading-xl pt-12">
+            <h3 className="text-white uppercase font-bold text-center  text-heading-m md:text-heading-l lg:text-heading-xl pt-12">
               Apa kata mereka?
             </h3>
           </section>
@@ -94,14 +94,14 @@ const Review = () => {
                 className="hover:rounded-full hover:bg-white hover:bg-opacity-[35%] hover:cursor-pointer"
                 onClick={() => leftClick()}
               >
-                <SlArrowLeft className="w-10 h-10 p-2 text-white " />
+                <IoIosArrowBack className="w-10 h-10 p-1 text-white " />
               </button>
 
               <button
                 className="hover:rounded-full hover:bg-white hover:bg-opacity-[35%] hover:cursor-pointer"
                 onClick={() => rightClick()}
               >
-                <SlArrowRight className="w-10 h-10 p-2 text-white " />
+                <IoIosArrowForward className="w-10 h-10 p-1 text-white " />
               </button>
             </section>
           </section>

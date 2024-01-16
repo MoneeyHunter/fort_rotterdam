@@ -1,8 +1,6 @@
 import Image from "next/image";
 
-
-import LaunchRoundedIcon from "@mui/icons-material/LaunchRounded";
-
+import { MdOutlineLaunch } from "react-icons/md";
 const GalleryCard = ({ src, title, onClick }) => {
   return (
     <section
@@ -32,7 +30,7 @@ const GalleryCard = ({ src, title, onClick }) => {
               <h1 className="text-heading-s font-bold text-white uppercase">
                 {title}
               </h1>
-              <LaunchRoundedIcon className="text-white" />
+              <MdOutlineLaunch className="text-white w-10 h-6" />
             </div>
           </header>
         </section>

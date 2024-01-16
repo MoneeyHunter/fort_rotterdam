@@ -44,7 +44,7 @@ const config = {
           },
         ],
         "heading-m": [
-          "28px",
+          "26px",
           {
             lineHeight: "36px",
           },
@@ -57,13 +57,13 @@ const config = {
         ],
 
         "heading-xl": [
-          "52px",
+          "44px",
           {
             lineHeight: "60px",
           },
         ],
         "heading-2xl": [
-          "64px",
+          "60px",
           {
             lineHeight: "72px",
           },

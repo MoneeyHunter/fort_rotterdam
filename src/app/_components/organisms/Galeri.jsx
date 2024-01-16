@@ -58,13 +58,13 @@ const LihatGaleri = () => {
         </section>
 
         <section className="flex flex-col relative gap-[300px] md:gap-[400px] w-full md:pb-20  ">
-          <section className="items-center flex flex-col gap-3 md:gap-8 lg:gap-12 px-8 ">
-            <p className="uppercase text-heading-l md:text-heading-xl lg:text-heading-2xl font-semibold text-center ">
+          <section className="items-center flex flex-col gap-3 md:gap-8 lg:gap-12 px-7 ">
+            <p className="uppercase text-heading-m md:text-heading-l lg:text-heading-xl font-semibold text-center ">
               Eksplorasi Benteng
               <br />
               Fort Rotterdam
             </p>
-            <section className="flex md:gap-5 items-center cursor-pointer">
+            <section className="flex md:gap-5 items-center">
               <Circle className="w-20 h-20 p-5 bg-primary-maroon scale-[.70] md:scale-95 lg:scale-100">
                 <Image
                   src="./icons/iconGaleri.svg"

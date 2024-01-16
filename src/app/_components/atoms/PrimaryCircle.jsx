@@ -3,12 +3,12 @@
 
 const primary = ({ children, className, onClick = () => {} }) => {
   return (
-    <button
+    <section
       className={`flex rounded-full transition-transform justify-center items-center ${className}`}
       onClick={onClick}
     >
       {children}
-    </button>
+    </section>
   );
 };
 

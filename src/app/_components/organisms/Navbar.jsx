@@ -5,7 +5,7 @@ import Logo from "../atoms/Logo";
 import NavbarItems from "../molecules/NavbarItems";
 
 //Membuat Komponen Navbar
-const Navbar = ({showBackground = true}) => {
+const Navbar = ({ showBackground = true }) => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   //Fungsi untuk menampilkan Navbar ketika di Scroll
@@ -23,8 +23,10 @@ const Navbar = ({showBackground = true}) => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 px-4 py-2 flex justify-between items-center transition-all ${
-        isScrolled && showBackground || showBackground===false ? "z-50 bg-primary-maroon" : "shadow-none"
+      className={`fixed top-0 left-0 right-0 px-7 md:px-14 py-2 flex justify-between items-center transition-all ${
+        (isScrolled && showBackground) || showBackground === false
+          ? "z-50 bg-primary-maroon"
+          : "shadow-none"
       } shadow-md`}
     >
       <Logo />
