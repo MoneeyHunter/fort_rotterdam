@@ -41,7 +41,7 @@ const Spot = () => {
         ></div>
         <div data-aos="fade-up" data-aos-duration="4000">
           <p
-            className="relative text-white text-center font-bold text-2xl 
+            className="relative text-white text-center font-bold text-heading-m md:text-heading-l 
               pt-24
               lg:pt-44 lg:text-heading-xl uppercase"
           >
@@ -54,7 +54,7 @@ const Spot = () => {
           >
             Benteng bukan hanya sebuah struktur batu, melainkan saksi
             <br />
-            bisu dari zaman yang telah berlalu.
+            bisu dari zaman yang telah berlalu
           </p>
         </div>
       </section>
@@ -96,15 +96,13 @@ const Spot = () => {
                   setIndexBigSpot(i);
                 }}
                 key={i}
-                data-aos="zoom-in "
-                data-aos-duration="4000"
               >
                 <section>
                   <div className="relative group">
                     <Image
                       src={v.imgPath}
-                      width={281}
-                      height={281}
+                      width={270}
+                      height={270}
                       alt={v.imgAlt}
                       objectFit="cover"
                       objectPosition="center"

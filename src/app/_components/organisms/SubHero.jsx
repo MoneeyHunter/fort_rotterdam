@@ -20,7 +20,7 @@ const SubHero = () => {
           </p>
         </section>
 
-        <section className="flex gap-5 justify-center flex-wrap items-center pt-16 sm:px-6 lg:px-0 md:px-0">
+        <section className="flex gap-10 justify-center flex-wrap items-center pt-16 md:px-14 px-7">
           <div data-aos="fade-up" data-aos-duration="4000">
             <Box>
               <div
@@ -130,7 +130,7 @@ const SubHero = () => {
 
       <section className="relative w-full h-[250px] md:h-[400px] lg:h-[500px] bg-primary-maroon font-bold text-white flex justify-center items-center uppecercase">
         <section data-aos="fade-up" data-aos-duration="4000" className="flex">
-          <p className="text-6xl translate-x-0  lg:text-7xl">“</p>
+          <p className="text-6xl translate-x-0  lg:text-9xl">“</p>
           <p className="lg:text-heading-xl pt-8 md:text-heading-m text-l  uppercase -translate-y-2">
             sejarah mengungkapkan masa lalu,
             <br />
