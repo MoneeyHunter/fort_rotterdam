@@ -62,11 +62,11 @@ const InfoTempat = () => {
             </div>
           </section>
 
-          <section className="flex flex-col gap-32 py-16 " id="waktukunjungan">
+          <section className="flex flex-col gap-32 py-16" id="waktukunjungan">
             <section
               data-aos="fade-up"
               data-aos-duration="4000"
-              className="relative flex flex-col-reverse gap-10 md:flex md:flex-row justify-between px-7 md:px-14"
+              className="relative flex flex-col-reverse gap-10 md:flex md:flex-row justify-between"
             >
               <section className=" w-full">
                 <div className="flex gap-3">
@@ -127,7 +127,7 @@ const InfoTempat = () => {
             </section>
 
             <section
-              className="flex flex-col-reverse md:flex md:flex-row justify-between gap-10 md:px-20 w-full "
+              className="flex flex-col-reverse gap-10 md:flex-row justify-between w-full "
               id="tiketmasuk"
               data-aos="fade-up"
               data-aos-duration="4000"
@@ -192,7 +192,7 @@ const InfoTempat = () => {
         </section>
 
         <section
-          className="py-16  px-7 md:px-14 gap-5 flex flex-col justify-start"
+          className="py-16 px-7 md:px-14 gap-5 flex flex-col justify-start"
           id="lokasi"
           data-aos="fade-up"
           data-aos-duration="4000"

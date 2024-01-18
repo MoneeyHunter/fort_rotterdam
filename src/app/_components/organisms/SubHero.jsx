@@ -7,20 +7,20 @@ import { useEffect } from "react";
 
 const SubHero = () => {
   return (
-    <main className="flex flex-col gap-24 lg:gap-36">
-      <section className="">
+    <main className="flex flex-col gap-5 md:gap-24 lg:gap-36 w-screen">
+      <section className="md:flex flex-col gap-5 md:gap-16 px-7 md:px-14 ">
         {/* Header */}
         <section
           className="text-primary-maroon text-center font-bold text-heading-l pt-14  
           lg:text-heading-xl
           md:text-5xl"
         >
-          <p className="uppercase text-[34px] lg:text-heading-xl">
+          <p className="uppercase text-heading-m md:text-heading-l lg:text-heading-xl">
             informasi umum
           </p>
         </section>
 
-        <section className="flex gap-10 justify-center flex-wrap items-center pt-16 md:px-14 px-7">
+        <section className="flex  gap-10 justify-center flex-wrap items-center scale-75 md:scale-100">
           <div data-aos="fade-up" data-aos-duration="4000">
             <Box>
               <div
@@ -131,7 +131,7 @@ const SubHero = () => {
       <section className="relative w-full h-[250px] md:h-[400px] lg:h-[500px] bg-primary-maroon font-bold text-white flex justify-center items-center uppecercase">
         <section data-aos="fade-up" data-aos-duration="4000" className="flex">
           <p className="text-6xl translate-x-0  lg:text-9xl">“</p>
-          <p className="lg:text-heading-xl pt-8 md:text-heading-m text-l  uppercase -translate-y-2">
+          <p className="lg:text-heading-xl pt-8 md:text-heading-l text-l  uppercase -translate-y-2">
             sejarah mengungkapkan masa lalu,
             <br />
             memberitahu masa kini,
