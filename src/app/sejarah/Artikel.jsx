@@ -31,7 +31,7 @@ const Artikel = () => {
         ></div>
         <div data-aos="fade-up">
           <p
-            className="relative text-white text-center font-bold text-2xl 
+            className="relative text-white text-center font-bold text-heading-m md:text-heading-l
               pt-24
               lg:pt-44 lg:text-heading-xl"
           >
@@ -41,27 +41,25 @@ const Artikel = () => {
           <p
             className="relative text-center text-zinc-100 tracking-widest
             text-[9px]
-            lg:text-base"
+            lg:text-base top-[-20px]"
           >
-            Benteng bukan hanya sebuah struktur batu, melainkan saksi
+            Benteng bukan hanya struktur batu, tetapi juga simbol ketahanan dan keberanian
             <br />
-            bisu dari zaman yang telah berlalu.
+            yang melindungi impian dan nilai-nilai kita
           </p>
         </div>
       </section>
 
       {/* Artikel */}
-      <section className="flex relative items-center justify-center">
-        <section className="lg:py-44 lg:px-16 py-32 px-0 max-lg:px-8 text-justify tracking-widest">
+      <section className="flex relative items-center justify-center lg:pl-14 lg:pr-7 px-7">
+        <section className="lg:py-44 lg:pr-16 py-32 text-justify tracking-widest">
           {ReactHtmlParser(ArtikelSejarah)}
         </section>
         <section className="max-lg:hidden">
-          <section className="relative pt-24">
-            <BoxImage className="flex absolute left-60 -z-10">
+          <section className="relative">
+            <BoxImage className="flex absolute -z-10">
               <div
-                className="absolute px-7 top-16"
-                data-aos="fade-up"
-                data-aos-duration="4000"
+                className="absolute px-7 top-7"
               >
                 <Image
                   src="/images/artikelEmpatt.webp"
