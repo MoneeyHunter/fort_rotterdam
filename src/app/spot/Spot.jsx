@@ -52,9 +52,7 @@ const Spot = () => {
             text-[9px]
             lg:text-base"
           >
-            Benteng bukan hanya sebuah struktur batu, melainkan saksi
-            <br />
-            bisu dari zaman yang telah berlalu
+            Benteng merupakan saksi bisu atas perjuangan bangsa melawan penjajah
           </p>
         </div>
       </section>

@@ -43,9 +43,7 @@ const Artikel = () => {
             text-[9px]
             lg:text-base top-[-20px]"
           >
-            Benteng bukan hanya struktur batu, tetapi juga simbol ketahanan dan keberanian
-            <br />
-            yang melindungi impian dan nilai-nilai kita
+            Sejarah merupakan jendela masa lalu & catatan kebijaksanaan
           </p>
         </div>
       </section>
