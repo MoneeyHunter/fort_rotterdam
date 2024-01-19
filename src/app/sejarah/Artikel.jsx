@@ -43,7 +43,7 @@ const Artikel = () => {
             text-[9px]
             lg:text-base top-[-20px]"
           >
-            Sejarah merupakan jendela masa lalu & catatan kebijaksanaan
+            Sejarah merupakan gudang pengetahuan yang tidak terbatas
           </p>
         </div>
       </section>
