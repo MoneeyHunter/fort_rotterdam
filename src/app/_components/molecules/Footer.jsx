@@ -116,7 +116,7 @@ const footer = () => {
                   </Circle>
                 </a>
                 <a
-                  href="https://www.youtube.com/"
+                  href="https://www.youtube.com/results?search_query=fort+rotterdam"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
